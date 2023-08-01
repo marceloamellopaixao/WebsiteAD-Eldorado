@@ -1,56 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assembleia de Deus Eldorado Online</title>
-    <script type="text/javascript" src="./index.js" defer=""></script>
-    <link rel="stylesheet" href="./index.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assembleia de Deus - Eldorado Online</title>
+  <link rel="shortcut icon" href="./img/logo-adeldorado.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="./js/script.js" defer></script>
+</head>
 
-  <body>
-    <main>
-      <header class="cabecalho">
-        <div class="logo">
-          <h1>Assembleia de Deus Eldorado - Jabaquara</h1>
-        </div>
-        <ul>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Doações</a></li>
-          <li><a href="#">Visite-nos</a></li>
-          <li><a href="#pedido">Pedido de Oração</a></li>
+<body>
+  <main id="theme-change">
 
-        </ul>
-      </header>
-      <section id="sobre"></section>
-      <section id="contato"></section>
-      <section id="eventos"></section>
-      <section id="doacoes"></section>
-      <section id="visite-nos"></section>
-      <section id="pedido">
-        <h1>Pedido de Oração</h1>
-        <form>
-          <div>
-            <input type="text" placeholder="Digite seu nome">
-            <br>
-            <label for="celular">Celular: </label>
-            <input type="tel" name="celular" placeholder="+55XXXXX-XXXX" id="">
-            <br>
-            <label for="info-email">E-mail:</label>
-            <input type="email" name="info-email" id="">
-            <br>
-            <label for="pedido-oracao">Informe seu pedido de oração: </label>
-            <textarea name="pedido-oracao" id="" cols="30" rows="10" maxlength="250"></textarea>
+    <!-- CABEÇALHO INICIAL = MENU -->
+    <header class="cabecalho">
+      <div class="logo-cabecalho">
+        <img src="./img/logo-adeldorado.png" alt="Logo da Igreja" class="logo-icon">
+        <h1 class="title-cabecalho">AD Eldorado</h1>
+      </div>
+      <ul>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#doacoes">Doações</a></li>
+        <li><a href="#visite-nos">Visite-nos</a></li>
+        <li><a href="#pedido">Pedido de Oração</a></li>
+      </ul>
+    </header>
+
+    <!-- SECTION MENSAGEM DO DIA -->
+    <section id="msg-day"> <!-- Colocar a imagem rezar de Fundo no CSS -->
+      <h2 class="title-msg-day">Mensagem do Dia</h2>
+      <div class="msg-day-text">
+        <p class="text-p">No dia seguinte João viu a Jesus, que vinha para ele, e disse: Eis o Cordeiro de Deus, que
+          tira o pecado do mundo.</p>
+        <p class="text-p">João 1:29</p>
+      </div>
+    </section>
+
+    <!-- SECTION SOBRE NÓS -->
+    <section id="sobre"> <!-- Colocar a imagem Igreja de Fundo no CSS -->
+      <h3 class="title-commum">Sobre Nós</h3>
+    </section>
+    
+    <!-- SECTION EVENTOS -->
+    <section id="eventos">
+      <h3 class="title-commum">Eventos</h3>
+      <div class="content-eventos">
+        <p class="text-p">Aniversário da Igreja.</p>
+      </div>
+      <div class="sociais">
+        <img src="./img/icon-instagram.svg" alt="Icone do Instagram" class="icon-commum">
+        <p class="text-p">iead_eldorado</p>
+      </div>
+    </section>
+
+    <!-- SECTION DOACOES -->
+    <section id="doacoes">
+      <h3 class="title-commum">Doações</h3>
+
+      <div class="content-doacoes">
+        <p class="text-p">Faça sua doação de cesta básica e ajude ao próximo, Contate-nos via Instagram.</p>
+        <img src="./img/icon-instagram.svg" alt="Icone do Instagram" class="icon-commum">
+      </div>
+    </section>
+
+    <!-- SECTION PEDIDO DE ORAÇÃO -->
+    <section id="pedido-oracao">
+      <h3 class="title-commum">Pedido de Oração</h3>
+
+      <form class="pedido-oracao-form">
+        <div class="pedido-oracao-content">
+          <div class="inputBox">
+            <label for="nome">Nome</label>
+            <input type="text" class="input-info">
+          </div>
+          <div class="inputBox">
+            <label for="celular">Celular </label>
+            <input type="tel" name="celular" placeholder="+55XXXXX-XXXX" class="input-info">
+          </div>
+          <div class="inputBox">
+            <label for="info-email">E-mail</label>
+            <input type="email" name="info-email" class="input-info">
+          </div>
+          <div class="inputBox">
+            <label for="pedido-oracao">Pedido de oração</label>
+            <textarea name="pedido-oracao" class="input-text"></textarea> <!-- cols="30" rows="10" maxlength="250" -->
+          </div>
+          <div class="inputBox">
             <input type="submit" value="Enviar">
           </div>
-        </form>
-      </section>
-    </main>
+        </div>
+      </form>
 
+    </section>
 
-  </body>
+    <!-- SECTION VISITE-NOS -->
+    <section id="visite-nos">
+      <h3 class="title-commum"></h3>
+    </section>
+
+    <!-- FOOTER/RODAPÉ DO SITE -->
+    <footer class="rodape">
+      <div class="icons-rodape">
+        <img src="./img/icon-instagram.svg" alt="Icone do Instagram" class="icon-commum">
+        <img src="./img/icon-facebook.svg" alt="Icone do Facebook" class="icon-commum">
+      </div>
+      <div class="txt-rodape">
+        <h3 class="title-rodape">ASSEMBLEIA DE DEUS - ELDORADO - SETOR 3</h3>
+        <p class="text-p">Todos os direitos da página são reservadas para a igreja.</p>
+      </div>
+      <div class="logo-rodape">
+        <img src="./img/logo-adeldorado.png" class="logo-icon" alt="Logo da Igreja">
+      </div>
+    </footer>
+
+    <div id="back-top"></div>
+  </main>
+</body>
 
 </html>
