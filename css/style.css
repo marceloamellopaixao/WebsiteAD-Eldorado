@@ -1,7 +1,137 @@
-body{
-    background: linear-gradient(rgba(6, 38, 99, 0.7) 0%, rgba(0, 123, 255, 0.74) 25%, rgba(161, 216, 255, 0.76) 52.60%, rgba(0, 123, 255, 0.77) 78.13%, rgba(6, 38, 99, 0.7) 100%);
+body {
+    /* background: linear-gradient(rgba(6, 38, 99, 0.7) 0%, rgba(0, 123, 255, 0.74) 25%, rgba(161, 216, 255, 0.76) 52.60%, rgba(0, 123, 255, 0.77) 78.13%, rgba(6, 38, 99, 0.7) 100%); */
+    background-color: black;
     color: aliceblue;
-    max-width: 1280px;
     width: 100%;
     height: 100vh;
+    font-family: Acme, 'Times New Roman', Times, serif, sans-serif, 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cabeçalho */
+
+header.cabecalho {
+    background: #040B2F;
+    width: 100%;
+    height: 90px;
+    padding: 12px 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Div com Icone e Texto da Igreja */
+.cabecalho .logo-cabecalho {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Icone da Igreja */
+.logo-icon {
+    width: 70px;
+    height: 70px;
+}
+
+/* Titulo nome da igreja */
+.cabecalho .title-cabecalho {
+    color: #E4E3E3;
+    text-align: center;
+    font-family: Acme, 'Times New Roman', Times, serif, sans-serif, 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 220ms;
+    cursor: pointer;
+}
+
+/* Efeito do botão home (nome da igreja) */
+.cabecalho .title-cabecalho:hover {
+    color: #6b0a0a;
+}
+
+/* Menu de navegação*/
+.cabecalho .menu-cabecalho {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Links de navegação no menu */
+.menu-cabecalho li a {
+    text-decoration: none;
+    color: #E4E3E3;
+    text-transform: uppercase;
+    transition: all 220ms;
+    cursor: pointer;
+}
+
+/* Efeito dos links */
+.menu-cabecalho li a:hover {
+    color: #6b0a0a;
+}
+
+/* Todos os sections terão a mesma configuração */
+section {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Todos os titulos terão a mesma configuração */
+.title-commum {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #FFF;
+    text-shadow: 0px 0px 4px #000;
+}
+
+/* Todos os paragrafos terão a mesma configuração */
+.text-p, .versiculo-p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 4px #000;
+}
+
+/* Section Mensagem do Dia */
+section#msg-day{
+    background-image: url(../img/rezar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Div do campo onde irá mostrar os paragráfos da mensagem do dia */
+.msg-day-text{
+    width: 50%;
+}
+
+/* Paragrafo onde irá mostrar o livro, capitulo e versiculo */
+.versiculo-p{
+    display: block;
+    float: right;
+}
+
+/* Section Sobre nós */
