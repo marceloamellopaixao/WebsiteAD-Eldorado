@@ -20,7 +20,7 @@ main {
 
 /* Cabeçalho */
 
-header.cabecalho {
+header .cabecalho {
     background: #040B2F;
     width: 100%;
     height: 90px;
@@ -29,6 +29,7 @@ header.cabecalho {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* position: fixed; */
 
 }
 
