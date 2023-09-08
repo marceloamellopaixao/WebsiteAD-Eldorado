@@ -18,17 +18,18 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body id="inicio">
   <main>
     <!-- CABEÇALHO INICIAL = MENU -->
     <header class="cabecalho">
       <div class="logo-cabecalho">
         <img src="./img/logo-adeldorado.png" alt="Logo da Igreja" class="logo-icon">
-        <h1 class="title-cabecalho">AD Eldorado</h1>
+        <h1 class="title-cabecalho"><a href="#inicio">AD Eldorado</a></h1>
       </div>
       <nav>
         <ul class="menu-cabecalho">
           <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#eventos">Eventos</a></li>
           <li><a href="#doacoes">Doações</a></li>
           <li><a href="#pedido-oracao">Pedido de Oração</a></li>
           <li><a href="#visite-nos">Visite-nos</a></li>
@@ -46,34 +47,38 @@
       </div>
     </section>
 
-    <!-- SECTION SOBRE NÓS -->
-    <section id="sobre"> <!-- Colocar a imagem Igreja de Fundo no CSS -->
-      <div class="border-top1">
+    <!-- SECTION SOBRE -->
+    <section class="sobre-content"> <!-- Colocar a imagem Igreja de Fundo no CSS -->
+      <div id="sobre" class="border-top1">
         <h3 class="title-commum">Sobre</h3>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consequuntur sint repellat
-        iure ex quaerat iste reiciendis totam voluptas error sed corporis dolorum obcaecati minus iusto mollitia
-        architecto expedita minima repudiandae? Ad eius minima minus optio quod ratione iste aliquam eaque expedita
-        ullam? Quidem maxime earum velit vel illum?</p>
+      <div class="content-p">
+        <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consequuntur sint repellat
+          iure ex quaerat iste reiciendis totam voluptas error sed corporis dolorum obcaecati minus iusto mollitia
+          architecto expedita minima repudiandae? Ad eius minima minus optio quod ratione iste aliquam eaque expedita
+          ullam? Quidem maxime earum velit vel illum?</p>
+      </div>
     </section>
 
     <!-- SECTION EVENTOS -->
-    <section id="eventos">
-      <div class="border-top2">
+    <section class="eventos-content">
+      <div id="eventos" class="border-top2">
         <h3 class="title-commum">Eventos</h3>
       </div>
-      <div class="content-eventos">
-        <p class="text-p">Aniversário da Igreja.</p>
-      </div>
-      <div class="sociais">
-        <img src="./img/icon-instagram.svg" alt="Icone do Instagram" class="icon-commum">
-        <p class="text-p">iead_eldorado</p>
+      <div class="eventos-content-second">
+        <div class="content-eventos">
+          <p class="text-p">Santa-Ceia</p>
+        </div>
+        <div class="eventos-redes-sociais">
+          <a href="https://google.com" target="_blank"><img src="./img/icon-instagram.svg" alt="Icone do Instagram" class="icon-commum"></a>
+          <a href="https://google.com" target="_blank" class="instagram">@iead_eldorado</a>
+        </div>
       </div>
     </section>
 
     <!-- SECTION DOACOES -->
-    <section id="doacoes">
-      <div class="border-top3">
+    <section class="doacoes-content">
+      <div id="doacoes" class="border-top3">
         <h3 class="title-commum">Doações</h3>
       </div>
       <div class="content-doacoes">
@@ -83,8 +88,8 @@
     </section>
 
     <!-- SECTION PEDIDO DE ORAÇÃO -->
-    <section id="pedido-oracao">
-      <div class="border-top4">
+    <section class="pedido-content">
+      <div id="pedido-oracao" class="border-top4">
         <h3 class="title-commum">Pedido de Oração</h3>
       </div>
 
@@ -105,7 +110,8 @@
           </div>
           <div class="inputBox">
             <label for="pedidoOracao">Pedido de oração</label>
-            <textarea name="pedidoOracao" class="input-text" id="pedido"></textarea> <!-- cols="30" rows="10" maxlength="250" -->
+            <textarea name="pedidoOracao" class="input-text" id="pedido"></textarea>
+            <!-- cols="30" rows="10" maxlength="250" -->
           </div>
           <div class="inputBox">
             <input type="submit" value="Enviar" id="submit">
@@ -117,25 +123,28 @@
     </section>
 
     <!-- SECTION VISITE-NOS -->
-    <section id="visite-nos">
-      <div class="border-top5">
+    <section class="visite-content">
+      <div id="visite-nos" class="border-top5">
         <h3 class="title-commum">Visite-nos</h3>
       </div>
     </section>
 
     <!-- FOOTER/RODAPÉ DO SITE -->
     <footer class="rodape">
-      <div class="icons-rodape">
-        <img src="./img/icon-instagram.svg" alt="Icone do Instagram" class="icon-commum">
-        <img src="./img/icon-facebook.svg" alt="Icone do Facebook" class="icon-commum">
+      <div class="rodape-content">
+        <div class="icons-rodape">
+          <img src="./img/icon-instagram.svg" alt="Icone do Instagram" class="icon-commum">
+          <img src="./img/icon-facebook.svg" alt="Icone do Facebook" class="icon-commum">
+        </div>
+        <div class="logo-rodape">
+          <img src="./img/logo-adeldorado.png" class="logo-icon" alt="Logo da Igreja">
+          <h3 class="title-rodape">IGREJA ASSEMBLEIA DE DEUS - SETOR 3</h3>
+        </div>
       </div>
       <div class="txt-rodape">
-        <h3 class="title-rodape">ASSEMBLEIA DE DEUS - ELDORADO - SETOR 3</h3>
         <p class="text-p">Todos os direitos da página são reservadas para a igreja.</p>
       </div>
-      <div class="logo-rodape">
-        <img src="./img/logo-adeldorado.png" class="logo-icon" alt="Logo da Igreja">
-      </div>
+
     </footer>
 
     <div id="back-top"></div>

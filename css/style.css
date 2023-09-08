@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -11,6 +11,26 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    overflow: inherit;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 110, 255);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: blue;
+    /* color of the scroll thumb */
+    border-radius: 50px;
+    /* roundness of the scroll thumb */
+    border: 2px solid rgb(255, 255, 255);
+    /* creates padding around scroll thumb */
 }
 
 main {
@@ -20,7 +40,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 150px;
 }
 
 /* Cabeçalho */
@@ -55,7 +74,7 @@ main {
 }
 
 /* Titulo nome da igreja */
-.cabecalho .title-cabecalho {
+.cabecalho .title-cabecalho a {
     color: #E4E3E3;
     text-align: center;
     font-family: Acme, 'Times New Roman', Times, serif, sans-serif, 'Courier New', Courier, monospace;
@@ -64,10 +83,11 @@ main {
     text-transform: uppercase;
     transition: all 220ms;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* Efeito do botão home (nome da igreja) */
-.cabecalho .title-cabecalho:hover {
+.cabecalho .title-cabecalho a:hover {
     color: #6b0a0a;
 }
 
@@ -97,12 +117,18 @@ main {
 section {
     background: linear-gradient(180deg, rgba(60, 91, 255, 0.50) 0%, rgba(11, 110, 225, 0.45) 100%);
     width: 100%;
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-bottom: 180px;
+}
+
+/* Última section não necessita de margem */
+.visite-content {
+    margin-bottom: 0;
 }
 
 /* Todos os titulos terão a mesma configuração */
@@ -116,23 +142,36 @@ section {
     text-shadow: 0px 0px 4px #000;
 }
 
-.border-top1, .border-top2, .border-top3,.border-top4,.border-top5 {
+.border-top1,
+.border-top2,
+.border-top3,
+.border-top4,
+.border-top5 {
     position: absolute;
-    top: 540px;
+    top: 590px;
     width: 50%;
     height: 100%;
     border-top: 2px solid #fff;
     padding-top: 120px;
     text-align: center;
+    pointer-events: none;
 }
 
-.border-top2 {top: 1150px;}
+.border-top2 {
+    top: 1270px;
+}
 
-.border-top3 {top: 1760px;}
+.border-top3 {
+    top: 1955px;
+}
 
-.border-top4 {top: 2370px;}
+.border-top4 {
+    top: 2635px;
+}
 
-.border-top5{top: 2980px;}
+.border-top5 {
+    top: 3310px;
+}
 
 /* Todos os paragrafos terão a mesma configuração */
 .text-p,
@@ -142,6 +181,7 @@ section {
     font-family: Poppins;
     font-size: 1.2rem;
     text-shadow: 0px 0px 4px #000;
+    text-decoration: none;
 }
 
 /* Section Mensagem do Dia */
@@ -154,18 +194,94 @@ section {
 
 /* Div do campo onde irá mostrar os paragráfos da mensagem do dia */
 .msg-day-text {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
 }
 
 /* Paragrafo onde irá mostrar o livro, capitulo e versiculo */
 .versiculo-p {
-    display: block;
-    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-/* Section Sobre nós */
-#sobre p {
-    width: 70vw;
-    font-size: 1.3rem;
+/* Section Sobre */
+.sobre-content {
+    background-image: url(../img/igreja.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-p {
+    width: 70%;
+}
+
+
+/* Section Eventos */
+
+.eventos-content-second, .eventos-redes-sociais{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.instagram {
+    color: #FFF;
     text-align: center;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 4px #000;
+    text-decoration: none;
+}
+
+.instagram:hover {
+    cursor: pointer;
+    color: #6b0a0a;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 80px;
+    gap: 120px;
+}
+
+.rodape-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.icons-rodape,
+.logo-rodape {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icons-rodape {
+    flex-direction: row;
+}
+
+.logo-rodape {
+    align-items: flex-end;
+}
+
+/* Icones no Rodapé */
+.rodape-content .icons-rodape img,
+.logo-rodape img {
+    width: 50px;
+    height: 50px;
 }
