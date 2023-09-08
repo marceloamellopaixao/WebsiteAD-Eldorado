@@ -11,10 +11,11 @@
   <link rel="stylesheet" href="./css/style.css">
   <script type="text/javascript" src="./js/script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Rowdies:wght@700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -25,17 +26,18 @@
         <img src="./img/logo-adeldorado.png" alt="Logo da Igreja" class="logo-icon">
         <h1 class="title-cabecalho">AD Eldorado</h1>
       </div>
-      <ul class="menu-cabecalho">
-        <li><a href="#sobre">Sobre nós</a></li>
-        <li><a href="#doacoes">Doações</a></li>
-        <li><a href="#visite-nos">Visite-nos</a></li>
-        <li><a href="#pedido">Pedido de Oração</a></li>
-      </ul>
-      <!-- <div id="theme-change">botão modo noturno</div> -->
+      <nav>
+        <ul class="menu-cabecalho">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#doacoes">Doações</a></li>
+          <li><a href="#pedido-oracao">Pedido de Oração</a></li>
+          <li><a href="#visite-nos">Visite-nos</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- SECTION MENSAGEM DO DIA -->
-    <section id="msg-day"> <!-- Colocar a imagem rezar de Fundo no CSS -->
+    <section id="msg-day" class="msg-day-content"> <!-- Colocar a imagem rezar de Fundo no CSS -->
       <h2 class="title-commum">Mensagem do Dia</h2>
       <div class="msg-day-text">
         <p class="text-p">No dia seguinte João viu a Jesus, que vinha para ele, e disse: Eis o Cordeiro de Deus, que
@@ -46,12 +48,20 @@
 
     <!-- SECTION SOBRE NÓS -->
     <section id="sobre"> <!-- Colocar a imagem Igreja de Fundo no CSS -->
-      <h3 class="title-commum">Sobre Nós</h3>
+      <div class="border-top1">
+        <h3 class="title-commum">Sobre</h3>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consequuntur sint repellat
+        iure ex quaerat iste reiciendis totam voluptas error sed corporis dolorum obcaecati minus iusto mollitia
+        architecto expedita minima repudiandae? Ad eius minima minus optio quod ratione iste aliquam eaque expedita
+        ullam? Quidem maxime earum velit vel illum?</p>
     </section>
-    
+
     <!-- SECTION EVENTOS -->
     <section id="eventos">
-      <h3 class="title-commum">Eventos</h3>
+      <div class="border-top2">
+        <h3 class="title-commum">Eventos</h3>
+      </div>
       <div class="content-eventos">
         <p class="text-p">Aniversário da Igreja.</p>
       </div>
@@ -63,8 +73,9 @@
 
     <!-- SECTION DOACOES -->
     <section id="doacoes">
-      <h3 class="title-commum">Doações</h3>
-
+      <div class="border-top3">
+        <h3 class="title-commum">Doações</h3>
+      </div>
       <div class="content-doacoes">
         <p class="text-p">Faça sua doação de cesta básica e ajude ao próximo, Contate-nos via Instagram.</p>
         <img src="./img/icon-instagram.svg" alt="Icone do Instagram" class="icon-commum">
@@ -73,16 +84,19 @@
 
     <!-- SECTION PEDIDO DE ORAÇÃO -->
     <section id="pedido-oracao">
-      <h3 class="title-commum">Pedido de Oração</h3>
+      <div class="border-top4">
+        <h3 class="title-commum">Pedido de Oração</h3>
+      </div>
 
-      <form class="pedido-oracao-form">
+      <form class="pedido-oracao-form" method="post">
+
         <div class="pedido-oracao-content">
           <div class="inputBox">
             <label for="nome">Nome</label>
             <input type="text" class="input-info">
           </div>
           <div class="inputBox">
-            <label for="celular">Celular </label>
+            <label for="celular">Celular</label>
             <input type="tel" name="celular" placeholder="+55XXXXX-XXXX" class="input-info">
           </div>
           <div class="inputBox">
@@ -97,13 +111,16 @@
             <input type="submit" value="Enviar">
           </div>
         </div>
+
       </form>
 
     </section>
 
     <!-- SECTION VISITE-NOS -->
     <section id="visite-nos">
-      <h3 class="title-commum"></h3>
+      <div class="border-top5">
+        <h3 class="title-commum">Visite-nos</h3>
+      </div>
     </section>
 
     <!-- FOOTER/RODAPÉ DO SITE -->
