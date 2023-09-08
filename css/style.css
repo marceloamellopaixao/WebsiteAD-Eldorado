@@ -230,6 +230,10 @@ section {
     gap: 10px;
 }
 
+.eventos-redes-sociais img{
+    width: 60px;
+}
+
 .instagram {
     color: #FFF;
     text-align: center;
