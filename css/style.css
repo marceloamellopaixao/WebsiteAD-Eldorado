@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    user-select: none;
     background-color: black;
     color: aliceblue;
     width: 100%;
@@ -222,6 +223,15 @@ section {
 
 
 /* Section Eventos */
+
+.eventos-content{
+    height: 800px;
+    gap: 30px;
+}
+
+.eventos-image{
+    width: 500px;
+}
 
 .eventos-content-second, .eventos-redes-sociais{
     display: flex;
