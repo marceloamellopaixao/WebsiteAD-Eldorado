@@ -163,7 +163,7 @@ section {
 }
 
 .border-top3 {
-    top: 1955px;
+    top: 2260px;
 }
 
 .border-top4 {
@@ -237,11 +237,32 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+}
+
+.eventos-content-second{
+    margin-top: 16vh;
+    gap: 20px
+}
+
+.content-eventos{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventos-redes-sociais{
+    flex-direction: row;
+    gap: 20px
 }
 
 .eventos-redes-sociais img{
-    width: 60px;
+    width: 30px;
+    transition: all 0.2s;
+}
+
+.eventos-redes-sociais img:hover{
+    transform: scale(1.1);
 }
 
 .instagram {
@@ -251,6 +272,7 @@ section {
     font-size: 1.2rem;
     text-shadow: 0px 0px 4px #000;
     text-decoration: none;
+    transition: all 0.2s
 }
 
 .instagram:hover {
