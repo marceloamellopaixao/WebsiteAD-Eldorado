@@ -15,23 +15,29 @@ body {
     overflow: inherit;
 }
 
-body::-webkit-scrollbar {
+/* Estilizar a barra de rolagem em todos os navegadores */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: blue rgb(0, 110, 255);
+}
+
+/* Estilo para navegadores que suportam as propriedades personalizadas do Webkit (como Chrome) */
+body::-webkit-scrollbar, .eventos-secundary::-webkit-scrollbar {
     width: 12px;
-    /* width of the entire scrollbar */
 }
 
-body::-webkit-scrollbar-track {
+.eventos-secundary::-webkit-scrollbar{
+    height: 12px;
+}
+
+body::-webkit-scrollbar-track, .eventos-secundary::-webkit-scrollbar-track {
     background: rgb(0, 110, 255);
-    /* color of the tracking area */
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb, .eventos-secundary::-webkit-scrollbar-thumb {
     background-color: blue;
-    /* color of the scroll thumb */
     border-radius: 50px;
-    /* roundness of the scroll thumb */
     border: 2px solid rgb(255, 255, 255);
-    /* creates padding around scroll thumb */
 }
 
 main {
@@ -224,45 +230,67 @@ section {
 
 /* Section Eventos */
 
-.eventos-content{
+.eventos-principal {
     height: 800px;
     gap: 30px;
 }
 
-.eventos-image{
+.eventos-image {
+    width: 200px;
+    transition: all 0.2s;
+}
+
+/* Carrossel de Imagens */
+
+.eventos-secundary{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-top: 100px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: center;
+}
+
+.item-img{
     width: 500px;
+    height: 100%;
 }
 
-.eventos-content-second, .eventos-redes-sociais{
+.eventos-redes-sociais {
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.eventos-content-second{
-    margin-top: 16vh;
-    gap: 20px
-}
-
-.content-eventos{
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.eventos-redes-sociais{
     flex-direction: row;
     gap: 20px
 }
 
-.eventos-redes-sociais img{
-    width: 30px;
-    transition: all 0.2s;
+.eventos-redes-sociais a:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #040b2f34;
+    border-radius: 15px;
 }
 
-.eventos-redes-sociais img:hover{
-    transform: scale(1.1);
+.eventos-redes-sociais a img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.4s;
+}
+
+.eventos-content img:hover,
+.eventos-redes-sociais img:hover {
+    transform: scale(1.2);
 }
 
 .instagram {
@@ -272,12 +300,23 @@ section {
     font-size: 1.2rem;
     text-shadow: 0px 0px 4px #000;
     text-decoration: none;
-    transition: all 0.2s
+    transition: all 0.4s
 }
 
 .instagram:hover {
+    transform: scale(1.1);
     cursor: pointer;
-    color: #6b0a0a;
+    color: #042852;
+}
+
+/* Visite-nos */
+
+.boxMap {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer */
@@ -320,4 +359,32 @@ footer {
 .logo-rodape img {
     width: 50px;
     height: 50px;
+}
+
+#back-top {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin: 15px;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seta-top{
+    display: block;
+    background: url(../img/arrow-top.svg) no-repeat center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.seta-top:hover{
+    transform: scale(1.4);
 }
