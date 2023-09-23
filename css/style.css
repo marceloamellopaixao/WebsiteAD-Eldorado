@@ -15,31 +15,6 @@ body {
     overflow: inherit;
 }
 
-/* Estilizar a barra de rolagem em todos os navegadores */
-body {
-    scrollbar-width: thin;
-    scrollbar-color: blue rgb(0, 110, 255);
-}
-
-/* Estilo para navegadores que suportam as propriedades personalizadas do Webkit (como Chrome) */
-body::-webkit-scrollbar, .eventos-secundary::-webkit-scrollbar {
-    width: 12px;
-}
-
-.eventos-secundary::-webkit-scrollbar{
-    height: 12px;
-}
-
-body::-webkit-scrollbar-track, .eventos-secundary::-webkit-scrollbar-track {
-    background: rgb(0, 110, 255);
-}
-
-body::-webkit-scrollbar-thumb, .eventos-secundary::-webkit-scrollbar-thumb {
-    background-color: blue;
-    border-radius: 50px;
-    border: 2px solid rgb(255, 255, 255);
-}
-
 main {
     background: linear-gradient(180deg, rgba(10, 29, 123, 0.70) 0%, rgba(0, 123, 255, 0.74) 25%, rgba(161, 216, 255, 0.76) 52.6%, rgba(0, 123, 255, 0.77) 78.12%, rgba(10, 29, 123, 0.80) 100%);
     width: 100%;
