@@ -284,6 +284,18 @@ section {
     color: #042852;
 }
 
+/* Doações */
+
+.content-doacoes {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
 /* Visite-nos */
 
 .boxMap {
