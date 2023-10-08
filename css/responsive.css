@@ -1,0 +1,10 @@
+@media screen and (max-width: 828px){
+    .eventos-principal{
+        height: 980px;
+    }
+
+    .item-img {
+        width: 84vw;
+        height: 42vh;
+    }
+}

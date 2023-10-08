@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    background: linear-gradient(180deg, rgba(10, 29, 123, 0.70) 0%, rgba(0, 123, 255, 0.74) 25%, rgba(161, 216, 255, 0.76) 52.6%, rgba(0, 123, 255, 0.77) 78.12%, rgba(10, 29, 123, 0.80) 100%);
+    background: url(../img/fundo.jpeg);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@ main {
 
 /* Efeito do botão home (nome da igreja) */
 .cabecalho .title-cabecalho a:hover {
-    color: #6b0a0a;
+    color: #112CB7;
 }
 
 /* Menu de navegação*/
@@ -92,12 +92,13 @@ main {
 
 /* Efeito dos links */
 .menu-cabecalho li a:hover {
-    color: #6b0a0a;
+    color: #112CB7;
 }
 
 /* Todos os sections terão a mesma configuração */
 section {
-    background: linear-gradient(180deg, rgba(60, 91, 255, 0.50) 0%, rgba(11, 110, 225, 0.45) 100%);
+    /* background: linear-gradient(180deg, rgba(60, 91, 255, 0.50) 0%, rgba(11, 110, 225, 0.45) 100%); */
+    background-color: #c7c7c73b;
     width: 100%;
     height: 500px;
     display: flex;
@@ -120,10 +121,12 @@ section {
     font-family: Poppins;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #FFF;
+    /* color: #FFF; */
+    color: #112CB7;
     text-shadow: 0px 0px 4px #000;
 }
 
+/* Bordas de cada titulo das seções */
 .border-top1,
 .border-top2,
 .border-top3,
@@ -133,7 +136,7 @@ section {
     top: 590px;
     width: 50%;
     height: 100%;
-    border-top: 2px solid #fff;
+    border-top: 2px solid #112CB7;
     padding-top: 120px;
     text-align: center;
     pointer-events: none;
@@ -158,21 +161,27 @@ section {
 /* Todos os paragrafos terão a mesma configuração */
 .text-p,
 .versiculo-p {
-    color: #FFF;
+    color: #312f2f;
     text-align: center;
     font-family: Poppins;
     font-size: 1.2rem;
-    text-shadow: 0px 0px 4px #000;
+    /* text-shadow: 0px 0px 4px #000; */
     text-decoration: none;
 }
 
 /* Section Mensagem do Dia */
 .msg-day-content {
-    background-image: url(../img/rezar.jpg);
+    /* background-image: url(../img/rezar.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-color: #c7c7c73b; */
+    background-blend-mode: color;
 }
+
+/* .msg-day-content .title-commum{
+    color: #fff;
+} */
 
 /* Div do campo onde irá mostrar os paragráfos da mensagem do dia */
 .msg-day-text {
@@ -192,11 +201,17 @@ section {
 
 /* Section Sobre */
 .sobre-content {
-    background-image: url(../img/igreja.jpg);
+    /* background-image: url(../img/igreja.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-color: #c7c7c73b; */
+    background-blend-mode: color;
 }
+
+/* .sobre-content .title-commum{
+    color: #fff;
+} */
 
 .content-p {
     width: 70%;
@@ -217,7 +232,7 @@ section {
 
 /* Carrossel de Imagens */
 
-.eventos-secundary{
+.eventos-secundary {
     width: 80%;
     display: flex;
     align-items: center;
@@ -227,13 +242,13 @@ section {
     margin-top: 100px;
 }
 
-.item{
+.item {
     display: flex;
     justify-content: center;
     scroll-snap-align: center;
 }
 
-.item-img{
+.item-img {
     width: 500px;
     height: 100%;
 }
@@ -255,7 +270,13 @@ section {
     height: 40px;
     background-color: #040b2f34;
     border-radius: 15px;
+    transition: all 0.4s;
 }
+
+.eventos-redes-sociais a:nth-child(1):hover {
+    background-color: #112CB7;
+}
+
 
 .eventos-redes-sociais a img {
     width: 30px;
@@ -281,7 +302,7 @@ section {
 .instagram:hover {
     transform: scale(1.1);
     cursor: pointer;
-    color: #042852;
+    color: #061561;
 }
 
 /* Doações */
@@ -364,7 +385,7 @@ footer {
     align-items: center;
 }
 
-.seta-top{
+.seta-top {
     display: block;
     background: url(../img/arrow-top.svg) no-repeat center;
     width: 100%;
@@ -372,6 +393,6 @@ footer {
     transition: all 0.4s;
 }
 
-.seta-top:hover{
+.seta-top:hover {
     transform: scale(1.4);
 }
