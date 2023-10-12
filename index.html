@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -15,6 +15,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font Icon -->
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+/>
   <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Rowdies:wght@700&display=swap"
     rel="stylesheet">
 </head>
@@ -27,7 +32,13 @@
         <img src="./img/logo-adeldorado.png" alt="Logo da Igreja" class="logo-icon">
         <h1 class="title-cabecalho"><a href="#inicio">AD Eldorado</a></h1>
       </div>
-      <nav>
+      <button class="btn-menu" onclick="hamburguer(1)">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <nav class="menu">
+        <a href="#" onclick="hamburguer(0)" class="btnClose">
+          <span class="material-symbols-outlined">close</span>
+        </a>
         <ul class="menu-cabecalho">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#eventos">Eventos</a></li>
@@ -48,9 +59,10 @@
       </div>
     </section>
 
+    <hr>
     <!-- SECTION SOBRE -->
-    <section class="sobre-content"> <!-- Colocar a imagem Igreja de Fundo no CSS -->
-      <div id="sobre" class="border-top1">
+    <section class="sobre-content" id="sobre"> <!-- Colocar a imagem Igreja de Fundo no CSS -->
+      <div class="border-top1">
         <h3 class="title-commum">Sobre</h3>
       </div>
       <div class="content-p">
@@ -62,9 +74,10 @@
       </div>
     </section>
 
+    <hr>
     <!-- SECTION EVENTOS -->
-    <section class="eventos-principal">
-      <div id="eventos" class="border-top2">
+    <section class="eventos-principal" id="eventos">
+      <div  class="border-top2">
         <h3 class="title-commum">Eventos</h3>
       </div>
       <div class="eventos-secundary">
@@ -104,9 +117,10 @@
       </div>
     </section>
 
+    <hr>
     <!-- SECTION DOACOES -->
-    <section class="doacoes-content">
-      <div id="doacoes" class="border-top3">
+    <section class="doacoes-content" id="doacoes">
+      <div  class="border-top3">
         <h3 class="title-commum">Doações</h3>
       </div>
       <div class="content-doacoes">
@@ -115,9 +129,10 @@
       </div>
     </section>
 
+    <hr>
     <!-- SECTION PEDIDO DE ORAÇÃO -->
-    <section class="pedido-content">
-      <div id="pedido-oracao" class="border-top4">
+    <section class="pedido-content" id="pedido-oracao">
+      <div class="border-top4">
         <h3 class="title-commum">Pedido de Oração</h3>
       </div>
 
@@ -150,12 +165,12 @@
 
     </section>
 
+    <hr>
     <!-- SECTION VISITE-NOS -->
-    <section class="visite-content">
-      <div id="visite-nos" class="border-top5">
-        <h3 class="title-commum">Visite-nos</h3>
-      </div>
+    <section class="visite-content" id="visite-nos">
       <div class="boxMap">
+        <h3 class="title-commum">Visite-nos</h3>
+
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6143.023468415731!2d-46.62867425775863!3d-23.723703952954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x94ce4431057996ff%3A0xc054b204a96989ca!2sAssembl%C3%A9ia%20de%20Deus%20-%20Jardim%20Eldorado%20-%20Diadema%20-%20SP%20-%20(Setor%203%20-%20Campo%20do%20Jabaquara)%20-%20R.%20Baiacu%2C%20300%20-%20Eldorado%2C%20Diadema%20-%20SP%2C%2009950-000!3m2!1d-23.723198099999998!2d-46.6252785!5e0!3m2!1spt-BR!2sbr!4v1694715620748!5m2!1spt-BR!2sbr"
           width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
