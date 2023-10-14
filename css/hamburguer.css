@@ -4,7 +4,7 @@
     }
 
     .cabecalho .menu-cabecalho{
-        gap: 0;
+        gap: 10px;
     }
 }
 
@@ -14,7 +14,7 @@
     }
 
     .cabecalho .menu-cabecalho{
-        gap: 0;
+        gap: 10px;
     }
 }
 
@@ -25,7 +25,7 @@
     }
 
     .cabecalho .menu-cabecalho{
-        gap: 0;
+        gap: 10px;
     }
 
     .hamburguer {

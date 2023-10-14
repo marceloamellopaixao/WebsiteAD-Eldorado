@@ -153,6 +153,7 @@ hr {
 
 /* Section Mensagem do Dia */
 .msg-day-content {
+    margin-top: 50px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
