@@ -39,14 +39,12 @@
     }
 
     .menu .menu-cabecalho {
-        width: 100%;
         flex-direction: column;
         text-align: center;
-        margin-top: 130px;
     }
 
     .menu li {
-        padding: 6%;
+        padding: 35px;
     }
 
     .menu li a {

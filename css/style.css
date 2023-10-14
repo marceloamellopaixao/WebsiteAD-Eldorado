@@ -21,25 +21,28 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 /* Cabeçalho */
 
+.hamburguer {
+    display: none;
+  }
+
 .cabecalho {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
     background: #040B2F;
     width: 100%;
     height: 90px;
-    padding: 12px 55px;
+    position: fixed;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    padding: 12px 55px;
+    box-shadow: 0px 6px 30px #161616;
 }
 
 /* Div com Icone e Texto da Igreja */
@@ -55,26 +58,6 @@ main {
     width: 70px;
     height: 70px;
 }
-
-.btn-menu{
-    display: none;
-	width: 50px;
-	height: 50px;
-	text-align: center;
-	color: #fff;
-	border-radius: 25px;
-	cursor: pointer;
-	background: #112CB7;
-}
-
-.menu{
-    display: block;
-}
-
-.menu .btnClose span{
-    display: none;
-}
-
 
 /* Titulo nome da igreja */
 .cabecalho .title-cabecalho a {
