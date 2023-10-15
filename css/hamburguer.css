@@ -4,6 +4,7 @@
     }
 
     .cabecalho .menu-cabecalho{
+        display: flex;
         gap: 10px;
     }
 }
@@ -14,6 +15,7 @@
     }
 
     .cabecalho .menu-cabecalho{
+        display: flex;
         gap: 10px;
     }
 }
@@ -25,6 +27,7 @@
     }
 
     .cabecalho .menu-cabecalho{
+        display: none;
         gap: 10px;
     }
 
@@ -55,11 +58,11 @@
         transition: 0.6s all;
     }
 
-    .active-nav {
+    .menu.active-nav {
         height: 100vh;
     }    
 
-    .inactive-nav {
+    .menu.inactive-nav {
         height: 0;
         width: 100vw;
 
@@ -72,7 +75,7 @@
         transition: 0.6s all;
     }
 
-    .active-ul {
+    .menu-cabecalho.active-ul {
         display: flex;
         flex-direction: column;
         width: fit-content;
@@ -81,9 +84,9 @@
 
         margin: 0 auto 0 auto;
         transition: 0.9s all;
-    }
+    } 
 
-    .inactive-ul{
+    .menu-cabecalho.inactive-ul{
         display: none;
 
         width: fit-content;
