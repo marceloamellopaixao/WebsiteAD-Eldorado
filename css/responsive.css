@@ -1,4 +1,4 @@
-@media screen and (max-width: 828px) {
+@media screen and (max-width: 900px) {
 
     /* HEADER */
     header {
@@ -44,6 +44,7 @@
     }
 
     .menu li {
+        width: 100%;
         padding: 35px;
     }
 

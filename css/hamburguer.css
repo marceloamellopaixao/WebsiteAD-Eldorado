@@ -78,7 +78,8 @@
     .menu-cabecalho.active-ul {
         display: flex;
         flex-direction: column;
-        width: fit-content;
+        align-items: center;
+        width: 90%;
         height: 100%;
         opacity: 1;
 
