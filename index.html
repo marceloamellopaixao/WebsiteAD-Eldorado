@@ -81,7 +81,7 @@
     <hr>
     <!-- SECTION EVENTOS -->
     <section class="eventos-principal" id="eventos">
-      <div  class="border-top2">
+      <div class="border-top2">
         <h3 class="title-commum">Eventos</h3>
       </div>
 
@@ -120,31 +120,6 @@
         <div class="swiper-pagination"></div>
       </div>
 
-      <!-- <div class="eventos-secundary">
-
-        <div class="item">
-          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-        </div>
-        <div class="item">
-          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-        </div>
-        <div class="item">
-          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-        </div>
-        <div class="item">
-          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-        </div>
-        <div class="item">
-          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-        </div>
-      </div> -->
-      <!-- <div id="controls">
-        <label for="item1"></label>
-        <label for="item2"></label>
-        <label for="item3"></label>
-        <label for="item4"></label>
-        <label for="item5"></label>
-      </div> -->
       <div class="eventos-redes-sociais">
         <a href="https://google.com" target="_blank"><img src="./img/icon-instagram.svg" alt="Icone do Instagram"
             class="icon-commum"></a>
@@ -156,7 +131,7 @@
     <hr>
     <!-- SECTION DOACOES -->
     <section class="doacoes-content" id="doacoes">
-      <div  class="border-top3">
+      <div class="border-top3">
         <h3 class="title-commum">Doações</h3>
       </div>
       <div class="content-doacoes">
@@ -176,21 +151,28 @@
 
         <div class="pedido-oracao-content">
           <div class="inputBox">
-            <label for="nome">Nome</label>
-            <input type="text" class="input-info" id="nome">
+            <label for="nome">
+              <span>Nome</span>
+              <input type="text" class="input-info" name="nome" id="nomeBox">
+            </label>
           </div>
           <div class="inputBox">
-            <label for="celular">Celular</label>
-            <input type="tel" name="celular" placeholder="+55XXXXX-XXXX" class="input-info">
+            <label for="celular">
+              <span>Celular</span>
+              <input type="tel" placeholder="+55XXXXX-XXXX" name="celular" class="input-info" id="celularBox">
+            </label>
           </div>
           <div class="inputBox">
-            <label for="infoEmail">E-mail</label>
-            <input type="email" name="infoEmail" class="input-info" id="email">
+            <label for="infoEmail">
+              <span>E-mail</span>
+              <input type="email" name="infoEmail" class="input-info" id="emailBox">
+            </label>
           </div>
           <div class="inputBox">
-            <label for="pedidoOracao">Pedido de oração</label>
-            <textarea name="pedidoOracao" class="input-text" id="pedido"></textarea>
-            <!-- cols="30" rows="10" maxlength="250" -->
+            <label for="pedidoOracao">
+              <span>Pedido de oração</span>
+              <textarea name="pedidoOracao" class="input-text" id="pedidoBox"></textarea>
+            </label>
           </div>
           <div class="inputBox">
             <input type="submit" value="Enviar" id="submit">
@@ -232,29 +214,34 @@
 
     </footer>
 
-    <div id="back-top">
+    <!-- Voltar para o inicio -->
+    <div id="back-top" class="seta-top-disable">
       <a href="#inicio" class="seta-top"></a>
     </div>
   </main>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer> 
+  <script>
 
-    let swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-    });
+
+    (function () {
+      window.addEventListener("scroll", function () {
+        let backInit = document.getElementById("back-top");
+        let scroll = window.scrollY;
+
+        if (scroll >= 300) {
+          backInit.classList.remove("seta-top-disable");
+
+        } else {
+          backInit.classList.add("seta-top-disable");
+        }
+      });
+    })();
 
   </script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js" defer></script>
 </body>
 
 </html>

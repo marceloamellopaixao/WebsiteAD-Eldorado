@@ -194,66 +194,39 @@ hr {
 
 .eventos-principal {
     position: relative;
-    height: 800px;
+    height: 100vh;
     gap: 30px;
 }
 
+/* Slides das imagens de Eventos */
+
 .swiper {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 60%;
+    z-index: 0!important;
   }
 
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: url(../img/fundo.jpeg);
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .swiper-slide img {
+  .swiper-slide .item-img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 
-
-/* 
-
-
-
-.eventos-image {
-    width: 200px;
-    transition: all 0.2s;
-}
-
-
-Carrossel de Imagens
-
-.eventos-secundary {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-
-.item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: center;
-}
-
-.item-img {
-    width: 500px;
-    height: 100%;
-}
-
-*/
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .eventos-redes-sociais {
     width: 100%;
@@ -390,6 +363,8 @@ footer .text-p{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transition: all 0.4s;
 }
 
 .seta-top {
@@ -402,4 +377,10 @@ footer .text-p{
 
 .seta-top:hover {
     transform: scale(1.4);
+}
+
+.seta-top-disable{
+    opacity: 0 !important;
+    display: none !important;
+    
 }
