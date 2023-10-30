@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="./css/responsive.css">
   <link rel="stylesheet" href="./css/hamburguer.css">
 
+  <!-- CSS Swiper - Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <!-- Javascript -->
   <script type="text/javascript" src="./js/script.js" defer></script>
   <script src="./js/hamburguer.js"></script>
@@ -81,28 +84,60 @@
       <div  class="border-top2">
         <h3 class="title-commum">Eventos</h3>
       </div>
-      <div class="eventos-secundary">
-        <!-- <input type="radio" name="item1" id="">
-        <input type="radio" name="item2" id="">
-        <input type="radio" name="item3" id="">
-        <input type="radio" name="item4" id="">
-        <input type="radio" name="item5" id=""> -->
-        <div class="item">
-          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+          </div>
         </div>
-        <div class="item">
-          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-        </div>
-        <div class="item">
-          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-        </div>
-        <div class="item">
-          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-        </div>
-        <div class="item">
-          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+
+      <!-- <div class="eventos-secundary">
+
+        <div class="item">
+          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+        </div>
+        <div class="item">
+          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+        </div>
+        <div class="item">
+          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+        </div>
+        <div class="item">
+          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+        </div>
+        <div class="item">
+          <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+        </div>
+      </div> -->
       <!-- <div id="controls">
         <label for="item1"></label>
         <label for="item2"></label>
@@ -201,6 +236,25 @@
       <a href="#inicio" class="seta-top"></a>
     </div>
   </main>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer> 
+
+    let swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+
+  </script>
 </body>
 
 </html>

@@ -193,16 +193,44 @@ hr {
 /* Section Eventos */
 
 .eventos-principal {
+    position: relative;
     height: 800px;
     gap: 30px;
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+/* 
+
+
 
 .eventos-image {
     width: 200px;
     transition: all 0.2s;
 }
 
-/* Carrossel de Imagens */
+
+Carrossel de Imagens
 
 .eventos-secundary {
     width: 80%;
@@ -224,6 +252,8 @@ hr {
     width: 500px;
     height: 100%;
 }
+
+*/
 
 .eventos-redes-sociais {
     width: 100%;
@@ -259,7 +289,7 @@ hr {
 .eventos-content img:hover,
 .eventos-redes-sociais img:hover {
     transform: scale(1.2);
-}
+} 
 
 .instagram {
     color: #FFF;
