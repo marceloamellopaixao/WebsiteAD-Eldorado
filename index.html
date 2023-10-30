@@ -220,30 +220,14 @@
 
     </footer>
 
-    <!-- Voltar para o inicio -->
+    
     <div id="back-top" class="seta-top-disable">
       <a href="#inicio" class="seta-top"></a>
     </div>
   </main>
 
-  <script>
-
-
-    (function () {
-      window.addEventListener("scroll", function () {
-        let backInit = document.getElementById("back-top");
-        let scroll = window.scrollY;
-
-        if (scroll >= 300) {
-          backInit.classList.remove("seta-top-disable");
-
-        } else {
-          backInit.classList.add("seta-top-disable");
-        }
-      });
-    })();
-
-  </script>
+  <!-- Voltar para o inicio com JS-->
+  <script src="./js/backmain.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
