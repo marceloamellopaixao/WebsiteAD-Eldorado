@@ -294,6 +294,7 @@ hr {
 /* Visite-nos */
 
 .boxMap {
+    user-select: text;
     width: 95%;
     height: 100%;
     display: flex;
