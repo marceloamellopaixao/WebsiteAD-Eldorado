@@ -284,6 +284,37 @@ hr {
     gap: 50px;
 }
 
+/* Pedido de Oração */
+
+.pedido-oracao-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedido-oracao-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.inputBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputBox span{
+    position: absolute;
+    color: #000;
+}
+
 /* Visite-nos */
 
 .visite-content{
