@@ -13,7 +13,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    overflow: inherit;
 }
 
 main {
@@ -144,7 +143,7 @@ hr {
 
 /* Todos os paragrafos terão a mesma configuração */
 .text-p,
-.versiculo-p {
+#versiculo-p {
     color: #312f2f;
     text-align: center;
     font-family: Poppins;
@@ -164,7 +163,7 @@ hr {
 }
 
 /* Paragrafo onde irá mostrar o livro, capitulo e versiculo */
-.versiculo-p {
+#versiculo-p {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -194,32 +193,45 @@ hr {
 /* Slides das imagens de Eventos */
 
 .swiper {
-    width: 90%;
+    width: 100%;
     height: 60%;
-    z-index: 0!important;
-  }
+    z-index: 0 !important;
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
-    /* background: url(../img/fundo.jpeg); */
-    border-radius: 50px;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide .item-img {
-    display: block;
-    width: 100%;
-    height: 100%;
+
+.swiper-slide .item-img {
+    border-radius: 20px;
+    height: 90%;
     object-fit: contain;
-  }
+    transition: all 0.4s;
 
-  .swiper {
+}
+
+.swiper-slide .item-img:hover{
+    transform: scale(1.1);
+}
+
+.swiper {
     margin-left: auto;
     margin-right: auto;
-  }
+}
+
+.swiper-button-next {
+    right: 95px !important;
+}
+
+.swiper-button-prev{
+    left: 95px !important;
+}
+
 
 .eventos-redes-sociais {
     width: 100%;
@@ -255,7 +267,7 @@ hr {
 .eventos-content img:hover,
 .eventos-redes-sociais img:hover {
     transform: scale(1.2);
-} 
+}
 
 .instagram {
     color: #FFF;
@@ -284,17 +296,20 @@ hr {
     gap: 50px;
 }
 
+.content-doacoes a img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.4s;
+}
+
+.content-doacoes img:hover,
+.content-doacoes img:hover {
+    transform: scale(1.2);
+}
+
 /* Pedido de Oração */
 
 .pedido-oracao-form {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.pedido-oracao-content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -303,35 +318,76 @@ hr {
     gap: 30px;
 }
 
-.inputBox {
-    width: 100%;
+.inputBox, .textBox {
+    width: 30%;
     display: flex;
-    align-items: center;
+    position: relative;
     justify-content: center;
 }
 
-.inputBox span{
-    position: absolute;
-    color: #000;
+.inputBox input, .textBox textarea{
+    user-select: all;
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: #061561;
+    border-radius: 30px;
+    outline: none;
+    color: #ffffff;
+    font-size: 1em;
 }
+
+.inputBox #submit{
+    width: 70%;
+}
+
+.inputBox span, .textBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color:rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.textBox span{
+    padding: 16px;
+}
+
+.inputBox input:valid ~ span, 
+.inputBox input:focus ~ span,
+.textBox textarea:valid ~ span, 
+.textBox textarea:focus ~ span{
+    color: #000000;
+    transform: translateX(20px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #ffffff;
+}
+
+
 
 /* Visite-nos */
 
-.visite-content{
+.visite-content {
     height: 80vh;
 }
 
 .boxMap {
     user-select: text;
     width: 95%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    padding: 50px 0 50px 0;
+    padding: 0 0 50px 0;
 }
+
+
 
 /* Footer */
 footer {
@@ -369,7 +425,7 @@ footer {
     align-items: flex-end;
 }
 
-footer .text-p{
+footer .text-p {
     color: #fff;
 }
 
@@ -409,8 +465,8 @@ footer .text-p{
     transform: scale(1.4);
 }
 
-.seta-top-disable{
+.seta-top-disable {
     opacity: 0 !important;
     display: none !important;
-    
+
 }

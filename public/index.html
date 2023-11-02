@@ -54,65 +54,45 @@
     </header>
 
     <!-- SECTION MENSAGEM DO DIA -->
-    <section id="msg-day" class="msg-day-content"> <!-- Colocar a imagem rezar de Fundo no CSS -->
+    <section class="msg-day-content"> <!-- Colocar a imagem rezar de Fundo no CSS -->
       <h2 class="title-commum">Mensagem do Dia</h2>
       <div class="msg-day-text">
-        <p class="text-p">No dia seguinte João viu a Jesus, que vinha para ele, e disse: Eis o Cordeiro de Deus, que
-          tira o pecado do mundo.</p>
-        <p class="versiculo-p">João 1:29</p>
+        <p class="text-p" id="msg-day"></p>
+        <p id="versiculo-p"></p>
       </div>
     </section>
 
     <hr>
     <!-- SECTION SOBRE -->
     <section class="sobre-content" id="sobre"> <!-- Colocar a imagem Igreja de Fundo no CSS -->
-      <div class="border-top1">
-        <h3 class="title-commum">Sobre</h3>
-      </div>
+      <h3 class="title-commum">Sobre</h3>
       <div class="content-p">
-        <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium consequuntur
-          sint repellat
-          iure ex quaerat iste reiciendis totam voluptas error sed corporis dolorum obcaecati minus iusto mollitia
-          architecto expedita minima repudiandae? Ad eius minima minus optio quod ratione iste aliquam eaque expedita
-          ullam? Quidem maxime earum velit vel illum?</p>
+        <p class="text-p">EM MANUTENÇÃO</p>
       </div>
     </section>
 
     <hr>
     <!-- SECTION EVENTOS -->
     <section class="eventos-principal" id="eventos">
-      <div class="border-top2">
-        <h3 class="title-commum">Eventos</h3>
-      </div>
+      <h3 class="title-commum">Eventos</h3>
 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+            <img src="./img/eventos/culto_familia.jpg" alt="Ilustração de Eventos" srcset="" class="item-img">
           </div>
           <div class="swiper-slide">
-            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+            <img src="./img/eventos/escola_dominical.jpg" alt="Ilustração de Eventos" srcset="" class="item-img">
           </div>
           <div class="swiper-slide">
-            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+            <img src="./img/eventos/aula_violao.jpg" alt="Ilustração de Eventos" srcset="" class="item-img">
           </div>
           <div class="swiper-slide">
-            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+            <img src="./img/eventos/culto_renovacao.jpg" alt="Ilustração de Eventos" srcset="" class="item-img">
           </div>
           <div class="swiper-slide">
-            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-          </div>
-          <div class="swiper-slide">
-            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-          </div>
-          <div class="swiper-slide">
-            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-          </div>
-          <div class="swiper-slide">
-            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
-          </div>
-          <div class="swiper-slide">
-            <img src="img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset="" class="item-img">
+            <img src="./img/eventos/festividade_unida_08e09.jpeg" alt="Ilustração de Eventos" srcset=""
+              class="item-img">
           </div>
         </div>
         <div class="swiper-button-next"></div>
@@ -132,52 +112,40 @@
     <hr>
     <!-- SECTION DOACOES -->
     <section class="doacoes-content" id="doacoes">
-      <div class="border-top3">
-        <h3 class="title-commum">Doações</h3>
-      </div>
+      <h3 class="title-commum">Doações</h3>
       <div class="content-doacoes">
         <p class="text-p">Faça sua doação de cesta básica e ajude ao próximo, Contate-nos via Instagram.</p>
-        <img src="./img/icon-instagram.svg" alt="Icone do Instagram" class="icon-commum">
+        <a href="https://www.instagram.com/iad_eldorado_/" target="_blank">
+          <img src="./img/icon-instagram.svg" alt="Icone do Instagram" class="icon-commum">
+        </a>
       </div>
     </section>
 
     <hr>
     <!-- SECTION PEDIDO DE ORAÇÃO -->
     <section class="pedido-content" id="pedido-oracao">
-      <div class="border-top4">
-        <h3 class="title-commum">Pedido de Oração</h3>
-      </div>
+      <h3 class="title-commum">Pedido de Oração</h3>
 
       <form class="pedido-oracao-form" method="post">
 
-        <div class="pedido-oracao-content">
-          <div class="inputBox">
-            <label for="nome">
-              <span>Nome</span>
-              <input type="text" class="input-info" name="nome" id="nomeBox">
-            </label>
-          </div>
-          <div class="inputBox">
-            <label for="celular">
-              <span>Celular</span>
-              <input type="tel" placeholder="+55XXXXX-XXXX" name="celular" class="input-info" id="celularBox">
-            </label>
-          </div>
-          <div class="inputBox">
-            <label for="infoEmail">
-              <span>E-mail</span>
-              <input type="email" name="infoEmail" class="input-info" id="emailBox">
-            </label>
-          </div>
-          <div class="inputBox">
-            <label for="pedidoOracao">
-              <span>Pedido de oração</span>
-              <textarea name="pedidoOracao" class="input-text" id="pedidoBox"></textarea>
-            </label>
-          </div>
-          <div class="inputBox">
-            <input type="submit" value="Enviar" id="submit">
-          </div>
+        <div class="inputBox">
+          <input type="text" id="nomeBox" required="required">
+          <span>Nome Completo</span>
+        </div>
+        <div class="inputBox">
+          <input type="tel" id="celularBox" required="required">
+          <span>Celular</span>
+        </div>
+        <div class="inputBox">
+          <input type="email" id="emailBox" required="required">
+          <span>E-mail</span>
+        </div>
+        <div class="textBox">
+          <textarea id="pedidoBox" required="required"></textarea>
+          <span>Pedido de oração</span>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Enviar" id="submit">
         </div>
 
       </form>
@@ -187,14 +155,15 @@
     <hr>
     <!-- SECTION VISITE-NOS -->
     <section class="visite-content" id="visite-nos">
+      <h3 class="title-commum">Visite-nos</h3>
+
       <div class="boxMap">
-        <h3 class="title-commum">Visite-nos</h3>
         <p class="text-p">Rua baiacu, 300 - Eldorado - Diadema / SP, 09972-010</p>
 
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6143.023468415731!2d-46.62867425775863!3d-23.723703952954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x94ce4431057996ff%3A0xc054b204a96989ca!2sAssembl%C3%A9ia%20de%20Deus%20-%20Jardim%20Eldorado%20-%20Diadema%20-%20SP%20-%20(Setor%203%20-%20Campo%20do%20Jabaquara)%20-%20R.%20Baiacu%2C%20300%20-%20Eldorado%2C%20Diadema%20-%20SP%2C%2009950-000!3m2!1d-23.723198099999998!2d-46.6252785!5e0!3m2!1spt-BR!2sbr!4v1694715620748!5m2!1spt-BR!2sbr"
-          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          width="100%" height="450" style="border:0; border-radius:50px; padding: 30px;" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
@@ -220,7 +189,7 @@
 
     </footer>
 
-    
+
     <div id="back-top" class="seta-top-disable">
       <a href="#inicio" class="seta-top"></a>
     </div>
@@ -229,9 +198,15 @@
   <!-- Voltar para o inicio com JS-->
   <script src="./js/backmain.js"></script>
 
+  <!-- Conexão com a API da biblia -->
+  <script src="./js/apiBible.js"></script>
+
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js" defer></script>
+
+  <!-- Conexão com a Cloud Firebase -->
+  <script src="./js/firebase.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,10 @@
         padding: 10px 10px;
     }
 
+    .cabecalho .logo-cabecalho{
+        gap: 10px;
+    }
+    
     .menu {
         width: 100%;
         height: 100%;
@@ -42,14 +46,27 @@
         gap: 10px;
     }
 
-    .item {
-        width: 100vw;
-        height: 350px;
+    .item-img {
+        height: 90% !important;
+        border-radius: 15px !important;
     }
 
-    .item-img {
-        width: 85vw;
-        height: 100%;
+    .swiper-button-next {
+        right: 20px !important;
+    }
+    
+    .swiper-button-prev{
+        left: 20px !important;
+    }
+    
+    .swiper-button-next::after, .swiper-button-prev::after {
+        font-size: 30px !important;
+    }
+
+    /* PEDIDO DE ORAÇÃO */
+
+    .inputBox, .textBox{
+        width: 70%;
     }
 
     /* FOOTER */
@@ -61,5 +78,15 @@
 
     footer .icons-rodape {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    
+    
+    /* PEDIDO DE ORAÇÃO */
+
+    .inputBox, .textBox{
+        width: 80%;
     }
 }
