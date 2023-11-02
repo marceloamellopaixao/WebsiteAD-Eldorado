@@ -1,6 +1,4 @@
-Aqui está a descrição implementada no texto:
-
-# Atualização do Site da Assembleia de Deus - Eldorado Online
+# Assembleia de Deus - Eldorado Online
 
 Estamos empolgados em anunciar a mais recente atualização do site da Assembleia de Deus - Eldorado Online. Nossa equipe trabalhou arduamente para aprimorar a experiência do usuário e adicionar novos recursos. Aqui estão os destaques da atualização:
 
