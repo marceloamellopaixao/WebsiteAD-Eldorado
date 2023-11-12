@@ -128,7 +128,7 @@ section:target {
     font-size: 2rem;
     text-transform: uppercase;
     color: #112CB7;
-    text-shadow: 0px 0px 4px #000;
+    text-shadow: 0px 0px 2px #000;
 }
 
 /* Bordas de cada titulo das seções */
@@ -152,6 +152,10 @@ hr {
 }
 
 /* Section Mensagem do Dia */
+.msg-day-content{
+    margin-top: 80px;
+}
+
 
 /* Div do campo onde irá mostrar os paragráfos da mensagem do dia */
 .msg-day-text {
@@ -315,7 +319,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .inputBox, .textBox {
@@ -339,6 +343,8 @@ hr {
 }
 
 .inputBox #submit{
+    font-family: Poppins;
+    text-transform: uppercase;
     width: 70%;
 }
 
@@ -373,7 +379,7 @@ hr {
 /* Visite-nos */
 
 .visite-content {
-    height: 80vh;
+    height: 100vh;
 }
 
 .boxMap {
