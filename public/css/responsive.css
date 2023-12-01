@@ -79,6 +79,10 @@
     footer .icons-rodape {
         flex-direction: column;
     }
+
+    footer .logo-rodape {
+        max-width: 70%;
+    }
 }
 
 @media screen and (max-width: 310px) {
@@ -88,5 +92,9 @@
 
     .inputBox, .textBox{
         width: 80%;
+    }
+
+    footer .logo-rodape {
+        max-width: 50%;
     }
 }

@@ -55,8 +55,13 @@ main {
 
 /* Icone da Igreja */
 .logo-icon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
+    transition: all 0.4s;
+}
+
+.logo-icon:hover {
+    transform: scale(1.2);
 }
 
 /* Titulo nome da igreja */
@@ -215,7 +220,7 @@ hr {
 
 }
 
-.swiper-slide .item-img:hover{
+.swiper-slide .item-img:hover {
     transform: scale(1.1);
 }
 
@@ -228,7 +233,7 @@ hr {
     right: 95px !important;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
     left: 95px !important;
 }
 
@@ -318,14 +323,16 @@ hr {
     gap: 30px;
 }
 
-.inputBox, .textBox {
+.inputBox,
+.textBox {
     width: 30%;
     display: flex;
     position: relative;
     justify-content: center;
 }
 
-.inputBox input, .textBox textarea{
+.inputBox input,
+.textBox textarea {
     user-select: all;
 
     width: 100%;
@@ -336,37 +343,49 @@ hr {
     outline: none;
     color: #ffffff;
     font-size: 1em;
+    font-family: Acme, 'Times New Roman', Times, serif, sans-serif, 'Courier New', Courier, monospace;
 }
 
-.inputBox #submit{
-    width: 70%;
+textarea{
+    height: 100%;
+    /* padding: 10px; */
 }
 
-.inputBox span, .textBox span{
+.inputBox span,
+.textBox span {
     position: absolute;
     left: 0;
     padding: 10px;
     pointer-events: none;
     font-size: 1em;
-    color:rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.25);
     text-transform: uppercase;
     transition: 0.5s;
 }
 
-.textBox span{
-    padding: 16px;
+.textBox span {
+    padding: 30px;
 }
 
-.inputBox input:valid ~ span, 
-.inputBox input:focus ~ span,
-.textBox textarea:valid ~ span, 
-.textBox textarea:focus ~ span{
+.inputBox input:valid~span,
+.inputBox input:focus~span,
+.textBox textarea:valid~span,
+.textBox textarea:focus~span {
     color: #000000;
     transform: translateX(20px) translateY(-7px);
     font-size: 0.65em;
     padding: 0 10px;
     background: #ffffff;
 }
+
+.inputBox #submit {
+    color: #FFF;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 70%;
+}
+
 
 
 
@@ -423,15 +442,22 @@ footer {
 
 .logo-rodape {
     align-items: flex-end;
+    text-align: end;
+    max-width: 60%;
 }
 
 footer .text-p {
     color: #fff;
 }
 
+.title-rodape{
+    text-transform: uppercase;
+}
+
 /* Icones no Rodapé */
 .rodape-content .icons-rodape img,
 .logo-rodape img {
+    color: white!important;
     width: 50px;
     height: 50px;
 }
