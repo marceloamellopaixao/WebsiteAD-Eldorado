@@ -113,7 +113,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 section:target {
@@ -154,10 +154,11 @@ hr {
     font-family: Poppins;
     font-size: 1.2rem;
     text-decoration: none;
+    width: 80%;
 }
 
 /* Section Mensagem do Dia */
-.msg-day-content{
+.msg-day-content {
     margin-top: 80px;
 }
 
@@ -167,7 +168,6 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
     gap: 20px;
 }
 
@@ -187,9 +187,17 @@ hr {
 }
 
 .content-p {
+    display: flex;
     width: 70%;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
 }
 
+
+.content-p a .text-p{
+    width: 100%;
+}
 
 /* Section Eventos */
 
@@ -305,16 +313,30 @@ hr {
     gap: 50px;
 }
 
-.content-doacoes a img {
-    width: 30px;
-    height: 30px;
+.content-doacoes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #040b2f34;
+    border-radius: 25px;
     transition: all 0.4s;
 }
 
-.content-doacoes img:hover,
-.content-doacoes img:hover {
+.content-doacoes a img{
+    height: 70px;
+    transition: all 0.4s;
+}
+
+.content-doacoes a:hover {
+    background-color: #112CB7;
+}
+
+.content-doacoes a img:hover{
     transform: scale(1.2);
 }
+
 
 /* Pedido de Oração */
 
@@ -324,7 +346,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .inputBox,
@@ -338,7 +360,6 @@ hr {
 .inputBox input,
 .textBox textarea {
     user-select: all;
-
     width: 100%;
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -350,17 +371,6 @@ hr {
     font-family: Acme, 'Times New Roman', Times, serif, sans-serif, 'Courier New', Courier, monospace;
 }
 
-textarea{
-    font-family: Poppins;
-    text-transform: uppercase;
-    height: 100%;
-    /* padding: 10px; */
-}
-
-textarea{
-    height: 100%;
-    /* padding: 10px; */
-}
 
 .inputBox span,
 .textBox span {
@@ -397,13 +407,10 @@ textarea{
     width: 70%;
 }
 
-
-
-
 /* Visite-nos */
 
 .visite-content {
-    height: 100vh;
+    height: 80vh;
 }
 
 .boxMap {
@@ -461,14 +468,14 @@ footer .text-p {
     color: #fff;
 }
 
-.title-rodape{
+.title-rodape {
     text-transform: uppercase;
 }
 
 /* Icones no Rodapé */
 .rodape-content .icons-rodape img,
 .logo-rodape img {
-    color: white!important;
+    color: white !important;
     width: 50px;
     height: 50px;
 }
