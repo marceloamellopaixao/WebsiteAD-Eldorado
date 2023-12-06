@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "adeldorado-teste"
-  }
+    "default": "adeldorado-teste",
+    "iadeldorado": "iadeldorado"
+    },
+  "targets": {},
+  "etags": {}
 }

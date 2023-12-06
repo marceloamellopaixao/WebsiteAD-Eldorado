@@ -71,6 +71,14 @@
         width: 70%;
     }
 
+
+    /* VISITE-NOS */
+
+    .visite-content {
+        height: 95vh;
+    }
+
+
     /* FOOTER */
 
     footer {
@@ -88,11 +96,27 @@
 }
 
 @media screen and (max-width: 400px) {
-    
-    .item-img {
-        height: 45% !important;
+
+    .title-commum {
+        font-size: inherit;
     }
-    
+
+    .logo-icon {
+        width: 40px;
+    }
+
+    .cabecalho .title-cabecalho a {
+        font-size: 12px;
+    }
+
+    .msg-day-content {
+        height: 80vh !important;
+    }
+
+    .item-img {
+        height: 60% !important;
+    }
+
     /* PEDIDO DE ORAÇÃO */
 
     .inputBox,
@@ -100,7 +124,30 @@
         width: 80%;
     }
 
+    /* FOOTER */
+
+    footer {
+        height: 70vh;
+        padding: 14px;
+        gap: 24px;
+    }
+
     footer .logo-rodape {
         max-width: 50%;
     }
+
+
+}
+
+@media screen and (max-width: 250px) {
+
+    .eventos-hr {
+        display: none;
+    }
+
+    .eventos-principal {
+        height: 70vh;
+        display: none;
+    }
+
 }

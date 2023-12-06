@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA3Cg4yvEEwSOx25xXFby5QJ0SjlXDIC94",
-  authDomain: "adeldorado-teste.firebaseapp.com",
-  projectId: "adeldorado-teste",
-  storageBucket: "adeldorado-teste.appspot.com",
-  messagingSenderId: "368877521166",
-  appId: "1:368877521166:web:847a71d583c9765acb2f5f"
+  apiKey: "AIzaSyD9FbQNrh3xDrLbHmNvr7Z9zUFFg83-3oA",
+  authDomain: "iadeldorado.firebaseapp.com",
+  projectId: "iadeldorado",
+  storageBucket: "iadeldorado.appspot.com",
+  messagingSenderId: "894984722200",
+  appId: "1:894984722200:web:bf9f9291ce6572e6fb706d"
 };
 
 // Initialize Firebase
