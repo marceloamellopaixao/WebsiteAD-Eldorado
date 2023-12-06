@@ -98,16 +98,16 @@
 @media screen and (max-width: 400px) {
 
     .title-commum {
-        font-size: inherit;
+        font-size: 1.6rem;
     }
 
-    .logo-icon {
-        width: 40px;
+    /* .logo-icon {
+        width: 50px;
     }
 
     .cabecalho .title-cabecalho a {
-        font-size: 12px;
-    }
+        font-size: 14px;
+    } */
 
     .msg-day-content {
         height: 80vh !important;
@@ -122,6 +122,18 @@
     .inputBox,
     .textBox {
         width: 80%;
+    }
+
+    /* DOAÇÕES */
+
+    .content-doacoes a {
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+    }
+    
+    .content-doacoes a img{
+        height: 50px;
     }
 
     /* FOOTER */
@@ -139,7 +151,23 @@
 
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 265px) {
+
+    .title-cabecalho {
+        display: none;
+    }
+
+    .title-commum {
+        font-size: inherit;
+    }
+
+    .msg-day-content{
+        height: 90vh !important;
+    }
+
+    .content-p {
+        width: 95%;
+    }
 
     .eventos-hr {
         display: none;
