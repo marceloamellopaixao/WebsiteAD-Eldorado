@@ -30,11 +30,11 @@ A seção "Pedido de Oração" foi aprimorada para facilitar o envio de pedidos 
 Atualizamos a localização da igreja no mapa para facilitar sua visita. Você pode encontrar a igreja no endereço atualizado.
 
 ### 8. Links para Redes Sociais
-Agora você pode se conectar conosco nas redes sociais através dos ícones de Instagram e Facebook no rodapé do site.
+Agora você pode se conectar conosco nas redes sociais através dos ícones de Instagram, Facebook e YouTube no rodapé do site.
 
 ## Como Acessar o Site
 
-Você pode acessar o site de teste da Assembleia de Deus - Eldorado Online [clicando aqui](https://adeldorado-teste.firebaseapp.com).
+Você pode acessar o site Assembleia de Deus - Eldorado Online [clicando aqui](https://iadeldorado.firebaseapp.com).
 
 Agradecemos por sua contínua dedicação à nossa igreja e esperamos que desfrute das melhorias em nosso site. 
 Continue nos acompanhando para obter as últimas atualizações e informações da igreja.

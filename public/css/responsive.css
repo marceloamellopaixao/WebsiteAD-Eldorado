@@ -34,6 +34,9 @@
         padding: 1.5% 3%;
     }
 
+    /* MENSAGEM DO DIA */
+    .msg-day-text{width: 95%;}
+
     /* EVENTOS */
 
     .eventos-principal {
