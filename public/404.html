@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página não encontrada - Error 404</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo-adeldorado.png" type="image/x-icon">
+
+    <!-- CSS Only -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Rowdies:wght@700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <style>
+        main {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .error-code {
+            font-size: 2.4rem;
+            color: #ec0000;
+        }
+
+        .msg-error {
+            font-size: 1.4rem;
+            color: #000000;
+        }
+
+        .msg-error a {
+            font-weight: bold;
+            color: #ec0000;
+        }
+    </style>
     <main>
         <h1 class="error-code">Error 404</h1>
-        <p>Esta página não foi encontrada</p>
-        <p>Aperte aqui para <a href="./index.html">Voltar ao Inicio</a></p>
+        <p class="msg-error">Esta página não foi encontrada</p>
+        <p class="msg-error"><a href="./index.html">Pressione para Voltar ao Inicio</a></p>
     </main>
 
 </body>
+
 </html>
