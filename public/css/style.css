@@ -153,7 +153,7 @@ hr {
     font-family: Poppins;
     font-size: 1.2rem;
     text-decoration: none;
-    width: 80%;
+    width: 100%;
 }
 
 /* Section Mensagem do Dia */
@@ -435,14 +435,14 @@ footer {
     justify-content: center;
     flex-direction: column;
     padding: 40px 80px;
-    gap: 120px;
+    gap: 60px;
 }
 
 .rodape-content {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .icons-rodape,

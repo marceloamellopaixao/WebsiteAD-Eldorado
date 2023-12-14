@@ -97,24 +97,28 @@
 
 @media screen and (max-width: 400px) {
 
+    /* .msg-day-text{width: 65%;} */
+    .text-p,
+    #versiculo-p {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    #versiculo-p {
+        justify-content: center;
+    }
+
+
     .title-commum {
         font-size: 1.6rem;
     }
 
-    /* .logo-icon {
-        width: 50px;
-    }
-
-    .cabecalho .title-cabecalho a {
-        font-size: 14px;
-    } */
-
     .msg-day-content {
-        height: 80vh !important;
+        height: 60vh !important;
     }
 
     .item-img {
-        height: 60% !important;
+        height: 80% !important;
     }
 
     /* PEDIDO DE ORAÇÃO */
@@ -131,8 +135,8 @@
         height: 60px;
         border-radius: 20px;
     }
-    
-    .content-doacoes a img{
+
+    .content-doacoes a img {
         height: 50px;
     }
 
@@ -145,37 +149,93 @@
     }
 
     footer .logo-rodape {
-        max-width: 50%;
+        max-width: 55%;
     }
 
-
+    .title-rodape {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
 }
 
 @media screen and (max-width: 265px) {
+    .msg-day-text {
+        width: 65%;
+    }
+
+    .text-p,
+    #versiculo-p {
+        font-size: 1rem;
+    }
+
+    #versiculo-p {
+        justify-content: center;
+    }
+
 
     .title-cabecalho {
         display: none;
     }
 
     .title-commum {
-        font-size: inherit;
+        font-size: 1.3rem;
     }
 
-    .msg-day-content{
-        height: 90vh !important;
+    .msg-day-content {
+        height: 60vh !important;
     }
 
     .content-p {
         width: 95%;
     }
 
-    .eventos-hr {
-        display: none;
-    }
-
+    .eventos-hr,
     .eventos-principal {
-        height: 70vh;
         display: none;
     }
 
+    .inputBox span,
+    .textBox span {
+        font-size: 0.8rem;
+        padding: 14px;
+    }
+
+    .textBox span {
+        padding: 24px 0 0 14px;
+    }
+
+    /* Footer */
+
+    footer {
+        height: 55vh;
+    }
+
+    .rodape-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .icons-rodape {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    footer .rodape-content .icons-rodape img,
+    .logo-rodape img {
+        width: 35px;
+        height: auto;
+    }
+
+    footer .logo-rodape {
+        max-width: 95%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-rodape {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+
+    #back-top{display: none;}
 }
