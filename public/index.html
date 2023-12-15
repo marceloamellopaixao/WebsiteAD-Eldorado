@@ -29,6 +29,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Rowdies:wght@700&display=swap"
     rel="stylesheet">
+
+  <!-- Cookies LGPD -->
+  <link rel="stylesheet" href="./css/cookies_lgpd.css">
+
 </head>
 
 <body id="inicio">
@@ -70,7 +74,9 @@
       <h3 class="title-commum">Sobre</h3>
       <div class="content-p">
         <p class="text-p">EM MANUTENÇÃO</p>
-        <a href="#"><p class="text-p">ler mais</p></a>
+        <a href="#">
+          <p class="text-p">ler mais</p>
+        </a>
       </div>
     </section>
 
@@ -82,8 +88,7 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./img/eventos/temp/culto_mulheres.jpg" alt="Ilustração de Eventos" srcset=""
-              class="item-img">
+            <img src="./img/eventos/temp/culto_mulheres.jpg" alt="Ilustração de Eventos" srcset="" class="item-img">
           </div>
           <!-- <div class="swiper-slide">
             <img src="./img/eventos/santa_ceia.jpg" alt="Ilustração de Eventos" srcset=""
@@ -160,6 +165,7 @@
       <script defer>
         document.getElementById("submit").addEventListener("click", function () {
           alert('Este opção está em manutenção!!')
+          // event.preventDefault();
         })
       </script>
 
@@ -228,6 +234,10 @@
 
   <!-- Conexão com a Cloud Firebase -->
   <script src="./js/firebase.js"></script>
+
+  <!-- Cookies LGPD -->
+  <script src="./js/cookies_lgpd.js"></script>
+
 </body>
 
 </html>

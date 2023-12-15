@@ -32,6 +32,9 @@ Atualizamos a localização da igreja no mapa para facilitar sua visita. Você p
 ### 8. Links para Redes Sociais
 Agora você pode se conectar conosco nas redes sociais através dos ícones de Instagram, Facebook e YouTube no rodapé do site.
 
+### 9. Cookies
+Foi feita a implementação de Cookies para informar ao usuário a utilização dos dados, sobre a LGPD e entre outros.
+
 ## Como Acessar o Site
 
 Você pode acessar o site Assembleia de Deus - Eldorado Online [clicando aqui](https://iadeldorado.firebaseapp.com).

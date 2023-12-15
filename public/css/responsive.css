@@ -100,6 +100,10 @@
 
 @media screen and (max-width: 400px) {
 
+    .menu li a {
+        font-size: 1.4rem;
+    }
+
     /* .msg-day-text{width: 65%;} */
     .text-p,
     #versiculo-p {
@@ -162,6 +166,10 @@
 }
 
 @media screen and (max-width: 265px) {
+    .menu li a {
+        font-size: 1.2rem;
+    }
+
     .msg-day-text {
         width: 65%;
     }
