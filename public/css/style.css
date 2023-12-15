@@ -489,10 +489,21 @@ footer .txt-rodape {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 footer .txt-rodape p {
     width: 100%;
+}
+
+footer .txt-rodape p a {
+    width: 100%;
+    color: #fff;
+    transition: 0.4s all;
+}
+
+footer .txt-rodape p a:hover{
+    color: #000;
 }
 
 #back-top {
