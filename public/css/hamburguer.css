@@ -34,6 +34,7 @@
     .hamburguer {
         display: block;
         cursor: pointer;
+        margin-left: 20px;
     }
 
     .hamburguer .line {

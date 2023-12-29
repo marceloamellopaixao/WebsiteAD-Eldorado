@@ -33,33 +33,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Rowdies:wght@700&display=swap"
     rel="stylesheet">
 
-  
+
 
 </head>
 
 <body id="inicio">
-  <main>
-    <!-- CABEÇALHO INICIAL = MENU -->
-    <header class="cabecalho">
-      <div class="logo-cabecalho">
-        <a href="#inicio"><img src="./img/logo-adeldorado.png" alt="Logo da Igreja" class="logo-icon"></a>
-        <h1 class="title-cabecalho"><a href="#inicio">IAD Eldorado</a></h1>
-      </div>
-      <div class="hamburguer" onclick="hamburguer()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <nav class="menu">
-        <ul class="menu-cabecalho">
-          <li><a class="active" href="#sobre">Sobre</a></li>
-          <li><a href="#eventos">Eventos</a></li>
-          <li><a href="#doacoes">Doações</a></li>
-          <li><a href="#pedido-oracao">Pedido de Oração</a></li>
-          <li><a href="#visite-nos">Visite-nos</a></li>
+  <!-- CABEÇALHO INICIAL = MENU -->
+  <header class="cabecalho">
+    
+    <div class="logo-cabecalho">
+      <a href="#inicio"><img src="./img/logo-adeldorado.png" alt="Logo da Igreja" class="logo-icon"></a>
+      <h1 class="title-cabecalho"><a href="#inicio">IAD Eldorado</a></h1>
+    </div>
+    
+    <div class="hamburguer" onclick="hamburguer()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    
+    <nav class="menu">
+      <ul class="menu-cabecalho">
+        <li><a class="active" href="#sobre">Sobre</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#doacoes">Doações</a></li>
+        <li><a href="#pedido-oracao">Pedido de Oração</a></li>
+        <li><a href="#visite-nos">Visite-nos</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-cabecalho-opcoes">
+      <div class="language">
+        <div class="language-selected">pt-BR</div>
+        <ul>
+          <li><a href="#" class="br">Português</a></li>
+          <li><a href="#" class="en">English</a></li>
+          <li><a href="#" class="es">Español</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
 
     <!-- SECTION MENSAGEM DO DIA -->
     <section class="msg-day-content"> <!-- Colocar a imagem rezar de Fundo no CSS -->
@@ -71,7 +87,8 @@
     </section>
 
     <hr class="sobre-hr">
-    <!-- SECTION SOBRE -->
+
+    <!-- SECTION SOBRE A IGREJA -->
     <section class="sobre-content" id="sobre"> <!-- Colocar a imagem Igreja de Fundo no CSS -->
       <h3 class="title-commum">Sobre</h3>
       <div class="content-p">
@@ -166,7 +183,7 @@
 
       <script defer>
         document.getElementById("submit").addEventListener("click", function () {
-          alert('Este opção está em manutenção!!')
+          alert('Esta opção está em manutenção!!')
           event.preventDefault();
         })
       </script>
@@ -174,6 +191,7 @@
     </section>
 
     <hr class="visite-hr">
+    
     <!-- SECTION VISITE-NOS -->
     <section class="visite-content" id="visite-nos">
       <h3 class="title-commum">Visite-nos</h3>
@@ -214,7 +232,8 @@
 
       <div class="txt-rodape">
         <p class="text-p">Todos os direitos da página são reservadas para a igreja.</p>
-        <p class="text-p">Versão <a href="./versions.html">v1.5.2</a></p>
+        <p class="text-p">Desenvolvido por Marcelo Augusto M. Paixão</p>
+        <p class="text-p"><a href="./versions.html">Versão 1.5.2</a></p>
       </div>
 
     </footer>
@@ -235,11 +254,16 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js" defer></script>
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
   <!-- Conexão com a Cloud Firebase -->
   <script src="./js/firebase.js"></script>
 
   <!-- Cookies LGPD -->
   <script src="./js/cookies_lgpd.js"></script>
+
+  <script src="./js/languages.js"></script>
 
 </body>
 

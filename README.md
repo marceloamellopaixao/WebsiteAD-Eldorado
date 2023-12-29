@@ -35,6 +35,9 @@ Agora você pode se conectar conosco nas redes sociais através dos ícones de I
 ### 9. Cookies
 Foi feita a implementação de Cookies para informar ao usuário a utilização dos dados, sobre a LGPD e entre outros.
 
+### 10. Idiomas
+Foi feita a implementação de +2 idiomas (Inglês e Espanhol), buscando uma forma de atualizar a mensagem do dia (Não está em outros idiomas ainda).
+
 ## Como Acessar o Site
 
 Você pode acessar o site Assembleia de Deus - Eldorado Online [clicando aqui](https://iadeldorado.firebaseapp.com).
