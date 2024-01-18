@@ -9,10 +9,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #ffffff59;
+            background-image: url(./img/fundo.jpeg);
+            background-blend-mode: color;
         }
 
         nav {
-            background-color: #aecfe1;
+            background-color: #040B2F;
             height: 80px;
 
             display: flex;
@@ -20,29 +23,21 @@
             align-items: center;
             flex-direction: row;
             gap: 50px;
-        }
 
-        a {
-            font-size: 20px;
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-            transition: 0.4s all
-        }
-
-        a:hover {
-            color: #0070d1;
+            padding: 20px;
         }
 
         hr {
             border: 2px solid #000;
             border-radius: 20px;
-            margin: 30px;
+            margin: 24px;
         }
 
         h2 {
+            color: #fff;
             font-weight: bold;
             font-size: 20px;
+            text-align: center;
         }
 
         h4 {
@@ -50,10 +45,24 @@
             margin-top: 0;
         }
 
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: 0.4s all;
+            text-align: center;
+
+        }
+
+        a:hover {
+            color: #0070d1;
+        }
+
         .versoes-ul {
             margin-top: 30px;
             list-style-type: none;
-            padding: 20px;
+            padding: 50px;
         }
 
         ul {
@@ -61,7 +70,17 @@
         }
 
         li {
-            margin-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            h2 {
+                font-size: inherit;
+            }
+
+            a {
+                font-size: inherit;
+            }
         }
     </style>
 </head>
@@ -70,7 +89,7 @@
 
     <main>
         <nav>
-            <h2>IAD Eldorado - Website Versions</h2>
+            <h2>IAD Eldorado - Versions</h2>
             <a href="./index.html">Voltar ao Inicio</a>
         </nav>
 
@@ -110,8 +129,16 @@
             <li>
                 <h4>v1.5.3</h4>
                 <ul>
-                    <li>Implementada no site um menu de opção do idioma para Inglês, Espanhol e Português</li>
-                    <li>Buscando uma forma de resolver o idioma da mensagem do dia (no momento não está traduzindo)</li>
+                    <li>Implementada no site um menu de opção do idioma para Inglês, Espanhol e Português;</li>
+                    <li>Buscando uma forma de resolver o idioma da mensagem do dia (no momento não está traduzindo).</li>
+                </ul>
+            </li>
+            <hr>
+            <!-- v1.5.4 -->
+            <li>
+                <h4>v1.5.4</h4>
+                <ul>
+                    <li>Implementada a correção do menu de opções dos idiomas.</li>
                 </ul>
             </li>
 
