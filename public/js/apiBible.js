@@ -28,12 +28,13 @@ function fetchAndDisplayVerse() {
     });
 }
 
-// Função para atualizar o versículo no DOM
+// Função para atualizar o versículo no DOM (Salvo nos Cookies do PC)
 function updateVerseInfo(nomeCapBible, capChapterBible, versicleBible) {
   versiculoMsgDay.innerText = nomeCapBible + ' ' + capChapterBible + ':' + versicleBible;
 }
 
-// Verifique e atualize o versículo quando a página for carregada
+// Deixa o versiculo salvo no computador (Caso não tenha passado das 23:59) e 
+// Atualiza o versículo (Caso tenha passado das 23:59) (Sempre que a página for carregada)
 const storedNomeCap = localStorage.getItem('nomeCapBible');
 const storedCapChapter = localStorage.getItem('capChapterBible');
 const storedVersicle = localStorage.getItem('versicleBible');
@@ -46,7 +47,7 @@ if (storedNomeCap && storedCapChapter && storedVersicle) {
   fetchAndDisplayVerse();
 }
 
-// Use setTimeout para calcular o tempo restante no dia atual
+// setTimeout para calcular o tempo restante no dia atual
 function updateVerseAtMidnight() {
   const now = new Date();
   const midnight = new Date();
@@ -57,8 +58,8 @@ function updateVerseAtMidnight() {
   setTimeout(fetchAndDisplayVerse, timeUntilMidnight);
 }
 
-// Chame a função para atualizar o versículo à meia-noite
+// Chama a função para atualizar o versículo à meia-noite
 updateVerseAtMidnight();
 
-// Use setInterval para verificar e atualizar o versículo a cada 24 horas após a meia-noite
+// O setInterval irá verificar e atualizar o versículo a cada 24 horas após a meia-noite
 setInterval(updateVerseAtMidnight, 24 * 60 * 60 * 1000);

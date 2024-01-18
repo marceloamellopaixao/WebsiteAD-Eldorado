@@ -2,8 +2,8 @@
 
 const purecookieTitle = "Cookies",
     purecookieDesc = "Ao utilizar este site, você aceita automaticamente que utilizemos os cookies.",
-    purecookieLink = '<br><br><a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/lgpd/termo-de-uso" target="_blank">Gostaria de saber mais?</a>',
-    purecookieLGPD = '<br><a href="https://www.gov.br/esporte/pt-br/acesso-a-informacao/lgpd" target="_blank">Lei Geral de Proteção de Dados (LGPD)</a>',
+    purecookieLink = '<br><br><a class="termo-uso-lgpd" href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/lgpd/termo-de-uso" target="_blank">Gostaria de saber mais?</a>',
+    purecookieLGPD = '<br><a class="lgpd-informacoes" href="https://www.gov.br/esporte/pt-br/acesso-a-informacao/lgpd" target="_blank">Lei Geral de Proteção de Dados (LGPD)</a>',
     purecookieButton = "Concordo";
 
 function fade(element, fadeIn, duration) {

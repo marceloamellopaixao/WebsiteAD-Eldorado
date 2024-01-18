@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    background: url(../img/fundo.jpeg);
+    background: url('../img/fundo.jpeg');
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -108,6 +108,8 @@ main {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    width: 50px;
+    margin-left: 10px;
 }
 
 
@@ -115,14 +117,15 @@ main {
 
 .language {
     position: relative;
-    width: 120px;
-    margin-left: 20px;
+    width: 50px;
+    height: 40px;
     font-weight: bold;
 }
 
 /* Texto do Idiomas selecionado */
 .language-selected {
     display: flex;
+    justify-content: center;
     align-items: center;
     color: #fff;
     cursor: pointer;
@@ -132,12 +135,11 @@ main {
 .language-selected:before {
     content: '';
     display: inline-block;
-    width: 40px;
-    height: 30px;
-    background-image: url(../img/flags-languages/flag-brazil.png);
+    width: 50px;
+    height: 35px;
+    background-image: url('../img/flags-languages/flag-brazil.png');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 10px;
 }
 
 /* jQuery Class */
@@ -146,7 +148,7 @@ main {
 }
 
 .language-selected.change-en:before {
-    background-image: url('../img/flags-languages/flag-eua.png');
+    background-image: url('../img/flags-languages/flag-eua2.svg');
 }
 
 .language-selected.change-es:before {
@@ -156,8 +158,8 @@ main {
 /* Lista de opções dos idiomas */
 .language ul {
     position: absolute;
-    width: 120px;
-    background-color: #fff;
+    width: 50px;
+    background-color: #040b2f;
     padding-top: 10px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
     display: none;
@@ -165,12 +167,13 @@ main {
 
 .language ul li {
     list-style: none;
+    transition: all 0.4s;
 }
 
 .language ul li a {
     display: block;
     color: #252525;
-    padding-top: 5px 10px;
+    /* padding-top: 5px 10px; */
 }
 
 .language ul li:hover {
@@ -180,25 +183,25 @@ main {
 .language ul li a:before {
     content: '';
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
-    margin: 0 10px 0 10px;
+    margin: 10px 10px 0 5px;
 }
 
 
 a.br::before {
-    background-image: url(../img/flags-languages/flag-brazil.png);
+    background-image: url('../img/flags-languages/flag-brazil.png');
 }
 
 a.en::before {
-    background-image: url(../img/flags-languages/flag-eua.png);
+    background-image: url('../img/flags-languages/flag-eua.png');
 }
 
 a.es::before {
-    background-image: url(../img/flags-languages/flag-es.png);
+    background-image: url('../img/flags-languages/flag-es.png');
 }
 
 .language:hover ul {
@@ -270,6 +273,7 @@ hr {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 95%;
 }
 
 /* Paragrafo onde irá mostrar o livro, capitulo e versiculo */
@@ -277,6 +281,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    width: 80%;
 }
 
 /* Section Sobre */
@@ -627,7 +632,7 @@ footer .txt-rodape p a:hover {
 
 .seta-top {
     display: block;
-    background: url(../img/arrow-top.svg) no-repeat center;
+    background: url('../img/arrow-top.svg') no-repeat center;
     width: 100%;
     height: 100%;
     transition: all 0.4s;

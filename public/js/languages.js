@@ -1,11 +1,11 @@
 $(function () {
     $('.br').click(function () {
+        $('title').text('Igreja Assembleia de Deus - Eldorado Online');
         $('.menu-cabecalho li a').eq(0).text('sobre');
         $('.menu-cabecalho li a').eq(1).text('eventos');
         $('.menu-cabecalho li a').eq(2).text('doações');
         $('.menu-cabecalho li a').eq(3).text('pedido de oração');
         $('.menu-cabecalho li a').eq(4).text('visite-nos');
-        $('.language-selected').text('pt-BR');
         $('.language-selected').removeClass('change-en');
         $('.language-selected').removeClass('change-es');
         $('.language-selected').addClass('change-br');
@@ -47,12 +47,12 @@ $(function () {
 
 $(function () {
     $('.en').click(function () {
+        $('title').text('Evangelical Church Assembly of God - Eldorado Online');
         $('.menu-cabecalho li a').eq(0).text('about');
         $('.menu-cabecalho li a').eq(1).text('events');
         $('.menu-cabecalho li a').eq(2).text('donations');
         $('.menu-cabecalho li a').eq(3).text('prayer request');
         $('.menu-cabecalho li a').eq(4).text('visit us');
-        $('.language-selected').text('en-US');
         $('.language-selected').removeClass('change-br');
         $('.language-selected').removeClass('change-es');
         $('.language-selected').addClass('change-en');
@@ -84,7 +84,7 @@ $(function () {
         $('#visite-nos .title-commum').text('Visit Us')
 
         // FOOTER/RODAPÉ DO SITE
-        $('.rodape-content .logo-rodape h3.title-rodape:eq(0)').text('Evangelical Church Assembly of God - Jardim Eldorado');
+        $('.rodape-content .logo-rodape h3.title-rodape:eq(0)').text('Evangelical Church Assembly of God - Garden Eldorado');
         $('.rodape-content .logo-rodape h3.title-rodape:eq(1)').text('Sector 3 - Campo do Jabaquara');
 
         $('.txt-rodape .text-p:nth-child(1)').text('All rights to the page are reserved for the church.')
@@ -95,12 +95,12 @@ $(function () {
 
 $(function () {
     $('.es').click(function () {
+        $('title').text('Igreja Evangélica Asamblea de Dios - Eldorado Online');
         $('.menu-cabecalho li a').eq(0).text('about');
         $('.menu-cabecalho li a').eq(1).text('eventos');
         $('.menu-cabecalho li a').eq(2).text('donações');
         $('.menu-cabecalho li a').eq(3).text('solicitud de oración');
         $('.menu-cabecalho li a').eq(4).text('visítanos');
-        $('.language-selected').text('ES');
         $('.language-selected').removeClass('change-en');
         $('.language-selected').removeClass('change-br');
         $('.language-selected').addClass('change-es');
