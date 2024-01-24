@@ -5,7 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Versions - IAD Eldorado</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo-adeldorado.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Rowdies:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Only -->
     <link rel="stylesheet" href="./css/reset.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,10 +47,34 @@
             margin: 24px;
         }
 
+        /* Icone da Igreja */
+        .logo-icon {
+            width: 60px;
+            transition: all 0.4s;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .versoes-icon{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        h2,
+        a {
+            color: #E4E3E3;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-family: Acme, 'Times New Roman', Times, serif, sans-serif, 'Courier New', Courier, monospace;
+            font-size: 1.2rem;
+        }
+
         h2 {
-            color: #fff;
             font-weight: bold;
-            font-size: 20px;
             text-align: center;
         }
 
@@ -45,19 +83,25 @@
             margin-top: 0;
         }
 
-        a {
-            font-size: 20px;
+        .btn-voltar {
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+            width: 100px;
+            height: 30px;
+
             text-decoration: none;
-            color: #fff;
             font-weight: bold;
-            transition: 0.4s all;
-            text-align: center;
 
+            transition: 0.8s all;
         }
 
-        a:hover {
-            color: #0070d1;
+        .btn-voltar:hover {
+            border-radius: 30px;
+            background-color: #d10000;
         }
+
+        
 
         .versoes-ul {
             margin-top: 30px;
@@ -89,8 +133,13 @@
 
     <main>
         <nav>
-            <h2>IAD Eldorado - Versions</h2>
-            <a href="./index.html">Voltar ao Inicio</a>
+            <div class="versoes-icon">
+                <a href="./index.html">
+                    <img class="logo-icon" src="./img/logo-adeldorado.png" alt="Ícone da Igreja">
+                </a>
+                <h2>IAD Eldorado - Versions</h2>
+            </div>
+            <a class="btn-voltar" href="./index.html">Voltar</a>
         </nav>
 
         <ul class="versoes-ul">
@@ -130,15 +179,28 @@
                 <h4>v1.5.3</h4>
                 <ul>
                     <li>Implementada no site um menu de opção do idioma para Inglês, Espanhol e Português;</li>
-                    <li>Buscando uma forma de resolver o idioma da mensagem do dia (no momento não está traduzindo).</li>
+                    <li>Buscando uma forma de resolver o idioma da mensagem do dia (no momento não está traduzindo).
+                    </li>
                 </ul>
             </li>
+
             <hr>
             <!-- v1.5.4 -->
             <li>
                 <h4>v1.5.4</h4>
                 <ul>
                     <li>Implementada a correção do menu de opções dos idiomas.</li>
+                </ul>
+            </li>
+
+            <hr>
+            <!-- v1.5.5 -->
+            <li>
+                <h4>v1.5.5</h4>
+                <ul>
+                    <li>Foi feita a correção do layout do campo de idiomas;</li>
+                    <li>Implementada uma forma de auto completar o número da pessoa no formulário.</li>
+                    <li>Implementada o envio dos pedidos de oração para o e-mail da igreja.</li>
                 </ul>
             </li>
 

@@ -24,6 +24,8 @@
 
   <!-- JavaScript -->
   <script src="./js/hamburguer.js" defer></script>
+  <script src="./js/formPedido.js"></script>
+  
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +34,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Rowdies:wght@700&display=swap"
     rel="stylesheet">
-
-
 
 </head>
 
@@ -64,7 +64,7 @@
 
     <div class="menu-cabecalho-opcoes">
       <div class="language">
-        <div class="language-selected"></div>
+        <div class="language-selected"><!--<i class="fa-solid fa-globe"></i>--><i class="fa-solid fa-earth-americas"></i></div>
         <ul>
           <li><a href="#" class="br"></a></li>
           <li><a href="#" class="en"></a></li>
@@ -157,34 +157,36 @@
     <section class="pedido-content" id="pedido-oracao">
       <h3 class="title-commum">Pedido de Oração</h3>
 
-      <form class="pedido-oracao-form" method="post">
+      <form class="pedido-oracao-form" action="https://formsubmit.co/adeldoradosetor3@gmail.com" method="post">
 
         <div class="inputBox">
-          <input type="text" id="nomeBox" required="required">
+          <input type="text" name="text" id="nomeBox" required="required">
           <span>Nome Completo</span>
         </div>
         <div class="inputBox">
-          <input type="tel" id="celularBox" required="required">
+          <input type="tel" name="tel" id="celularBox" title="Ex. +55 (11) 91234-1234" required="required">
           <span>Celular</span>
         </div>
         <div class="inputBox">
-          <input type="email" id="emailBox" required="required">
+          <input type="email" name="email" id="emailBox" required="required">
           <span>E-mail</span>
         </div>
         <div class="textBox">
-          <textarea id="pedidoBox" required="required"></textarea>
+          <textarea id="pedidoBox" name="message" required="required"></textarea>
           <span>Pedido de oração</span>
         </div>
         <div class="inputBox">
           <input type="submit" value="Enviar" id="submit">
         </div>
+        <input type="hidden" name="_next" value="https://iadeldorado.firebaseapp.com/">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
 
       </form>
 
       <script defer>
         document.getElementById("submit").addEventListener("click", function () {
-          alert('Esta opção está em manutenção!!')
-          event.preventDefault();
+          alert('Pedido de Oração enviada com sucesso!!')
         })
       </script>
 
@@ -233,7 +235,7 @@
       <div class="txt-rodape">
         <p class="text-p">Todos os direitos da página são reservadas para a igreja.</p>
         <p class="text-p">Desenvolvido por Marcelo Augusto M. Paixão</p>
-        <p class="text-p"><a href="./versions.html">Versão 1.5.4</a></p>
+        <p class="text-p"><a href="./versions.html">Versão 1.5.5</a></p>
       </div>
 
     </footer>
@@ -255,7 +257,11 @@
   <script src="./js/swiper.js" defer></script>
 
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b83066dc1c.js" crossorigin="anonymous"></script>
 
   <!-- Conexão com a Cloud Firebase -->
   <script src="./js/firebase.js"></script>

@@ -15,10 +15,11 @@ $(function () {
 
         // SECTION SOBRE A IGREJA
         $('#sobre .title-commum').text('Sobre')
+        $('#sobre .content-p .text-p').text("EM MANUTENÇÃO")
         $('#sobre a p').text('ler mais')
 
         // SECTION EVENTOS
-        $('#events .title-commum').text("Eventos")
+        $('#eventos .title-commum').text("Eventos")
 
         // SECTION DOACOES
         $('#doacoes .title-commum').text('Doações')
@@ -62,7 +63,7 @@ $(function () {
 
         // SECTION SOBRE A IGREJA
         $('#sobre .title-commum').text('About')
-        $('#sobre p.text-p').text('Under maintenance')
+        $('#sobre .content-p .text-p').text('UNDER MAINTENANCE')
         $('#sobre a p').text('read more')
 
         // SECTION EVENTOS
@@ -110,11 +111,11 @@ $(function () {
 
         // SECTION SOBRE A IGREJA
         $('#sobre .title-commum').text('Acerca de')
-        $('#sobre p.text-p').text('En manutención')
+        $('#sobre .content-p .text-p').text('EN MANUTENCIÓN')
         $('#sobre a p').text('leer más')
 
         // SECTION EVENTOS
-        $('#events .title-commum').text("Eventos")
+        $('#eventos .title-commum').text("Eventos")
 
         // SECTION DOACOES
         $('#doacoes .title-commum').text('Donaciones')

@@ -38,7 +38,7 @@ main {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     padding: 12px 55px;
@@ -47,7 +47,7 @@ main {
 
 /* Div com Icone e Texto da Igreja */
 .cabecalho .logo-cabecalho {
-    width: 230px;
+    width: 210px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -109,7 +109,6 @@ main {
     flex-direction: row;
     gap: 20px;
     width: 50px;
-    margin-left: 10px;
 }
 
 
@@ -135,11 +134,26 @@ main {
 .language-selected:before {
     content: '';
     display: inline-block;
-    width: 50px;
-    height: 35px;
-    background-image: url('../img/flags-languages/flag-brazil.png');
+    /* width: 50px;
+    height: 35px; */
+    /* background-image: url('../img/flags-languages/flag-brazil.png'); */
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.fa-solid {
+    font-size: 35px;
+    display: flex;
+    width: 50px;
+    height: 40px;
+}
+
+.fa-earth-americas:before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
 }
 
 /* jQuery Class */
