@@ -1,3 +1,4 @@
+
 'use strict';
 
 const purecookieTitle = "Cookies",
@@ -56,10 +57,10 @@ function cookieConsent() {
         consentContainer.className = "cookieConsentContainer";
         consentContainer.id = "cookieConsentContainer";
         consentContainer.innerHTML = `
-      <div class="cookieTitle"><a>${purecookieTitle}</a></div>
-      <div class="cookieDesc"><p>${purecookieDesc} ${purecookieLink} ${purecookieLGPD}</p></div>
-      <div class="cookieButton"><a onClick="purecookieDismiss();">${purecookieButton}</a></div>
-    `;
+            <div class="cookieTitle"><a>${purecookieTitle}</a></div>
+            <div class="cookieDesc"><p>${purecookieDesc} ${purecookieLink} ${purecookieLGPD}</p></div>
+            <div class="cookieButton"><a onClick="purecookieDismiss();">${purecookieButton}</a></div>
+            `;
         document.body.appendChild(consentContainer);
         fade(consentContainer, true);
     }

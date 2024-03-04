@@ -42,7 +42,7 @@ $(function () {
 
         $('.txt-rodape .text-p:nth-child(1)').text('Todos os direitos da página são reservados para a igreja.');
         $('.txt-rodape .text-p:nth-child(2)').text('Desenvolvido por Marcelo Augusto M. Paixão');
-        $('.txt-rodape .text-p:nth-child(3) a').text('Versão 1.5.2').attr('href', './versions.html');
+        $('.txt-rodape .text-p:nth-child(3) a').text('Versão 1.5.6').attr('href', './versions.html');
     })
 });
 
@@ -90,7 +90,7 @@ $(function () {
 
         $('.txt-rodape .text-p:nth-child(1)').text('All rights to the page are reserved for the church.')
         $('.txt-rodape .text-p:nth-child(2)').text('Developed by Marcelo Augusto M. Paixão')
-        $('.txt-rodape .text-p:nth-child(3) a').text('Version 1.5.2').attr('href', './versions.html');
+        $('.txt-rodape .text-p:nth-child(3) a').text('Version 1.5.6').attr('href', './versions.html');
     })
 });
 
@@ -138,6 +138,6 @@ $(function () {
 
         $('.txt-rodape .text-p:nth-child(1)').text('Todos los derechos de la página están reservados a la iglesia.')
         $('.txt-rodape .text-p:nth-child(2)').text('Desarrollado por Marcelo Augusto M. Paixão')
-        $('.txt-rodape .text-p:nth-child(3) a').text('Versión 1.5.2').attr('href', './versions.html');
+        $('.txt-rodape .text-p:nth-child(3) a').text('Versión 1.5.6').attr('href', './versions.html');
     })
 });

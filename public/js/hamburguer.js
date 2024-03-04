@@ -1,3 +1,4 @@
+
 let navBar = document.getElementsByClassName("menu");
 let ulnavBar = document.getElementsByClassName("menu-cabecalho");
 
@@ -11,7 +12,7 @@ function hamburguer() {
 
         navBar[0].classList.toggle("inactive-nav");
         ulnavBar[0].classList.toggle("inactive-ul");
-    
+
     } else {
         navBar[0].classList.toggle("active-nav");
         ulnavBar[0].classList.toggle("active-ul");

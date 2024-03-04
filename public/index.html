@@ -24,7 +24,7 @@
 
   <!-- JavaScript -->
   <script src="./js/hamburguer.js" defer></script>
-  <script src="./js/formPedido.js"></script>
+  <script src="./js/formPedido.js" defer></script>
   
 
   <!-- Google Fonts -->
@@ -107,7 +107,7 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./img/eventos/temp/culto_especial_natal.jpg" alt="Ilustração de Eventos" srcset=""
+            <img src="./img/eventos/temp/curso_teologia.jpg" alt="Ilustração de Eventos" srcset=""
               class="item-img">
           </div>
           <div class="swiper-slide">
@@ -157,23 +157,39 @@
     <section class="pedido-content" id="pedido-oracao">
       <h3 class="title-commum">Pedido de Oração</h3>
 
-      <form class="pedido-oracao-form" action="https://formsubmit.co/adeldoradosetor3@gmail.com" method="post">
+      <form class="pedido-oracao-form" action="https://formsubmit.co/marceloamellopaixao@gmail.com" method="post">
 
         <div class="inputBox">
-          <input type="text" name="text" id="nomeBox" required="required">
+          <input type="text" name="name" id="nomeBox" required="required" oninput="verifyName()">
           <span>Nome Completo</span>
+          <!-- <i><img src="./img/icons/success-icon.svg" alt="Ícone de sucesso"></i>
+          <i><img src="./img/icons/error-icon.svg" alt="Ícone de Erro"></i> -->
+
+          <!-- <p class="error-message">Ocorreu um erro</p> -->
         </div>
         <div class="inputBox">
-          <input type="tel" name="tel" id="celularBox" title="Ex. +55 (11) 91234-1234" required="required">
+          <input type="tel" name="celular" id="celularBox" title="Ex. +55 (11) 91234-1234" required="required" oninput="verifyPhone()">
           <span>Celular</span>
+          <!-- <i><img src="./img/icons/success-icon.svg" alt="Ícone de sucesso"></i>
+          <i><img src="./img/icons/error-icon.svg" alt="Ícone de Erro"></i> -->
+          
+          <!-- <p class="error-message">Ocorreu um erro</p> -->
         </div>
         <div class="inputBox">
-          <input type="email" name="email" id="emailBox" required="required">
+          <input type="email" name="email" id="emailBox" required="required" oninput="verifyEmail()">
           <span>E-mail</span>
+          <!-- <i><img src="./img/icons/success-icon.svg" alt="Ícone de sucesso"></i>
+          <i><img src="./img/icons/error-icon.svg" alt="Ícone de Erro"></i> -->
+          
+          <!-- <p class="error-message">Ocorreu um erro</p> -->
         </div>
         <div class="textBox">
-          <textarea id="pedidoBox" name="message" required="required"></textarea>
+          <textarea id="pedidoBox" name="pedido-oracao" required="required" oninput="verifyMessage()"></textarea>
           <span>Pedido de oração</span>
+          <!-- <i><img src="./img/icons/success-icon.svg" alt="Ícone de sucesso"></i>
+          <i><img src="./img/icons/error-icon.svg" alt="Ícone de Erro"></i> -->
+          
+          <!-- <p class="error-message">Ocorreu um erro</p> -->
         </div>
         <div class="inputBox">
           <input type="submit" value="Enviar" id="submit">
@@ -183,12 +199,6 @@
         <input type="hidden" name="_template" value="box">
 
       </form>
-
-      <script defer>
-        document.getElementById("submit").addEventListener("click", function () {
-          alert('Pedido de Oração enviada com sucesso!!')
-        })
-      </script>
 
     </section>
 
@@ -235,7 +245,7 @@
       <div class="txt-rodape">
         <p class="text-p">Todos os direitos da página são reservadas para a igreja.</p>
         <p class="text-p">Desenvolvido por Marcelo Augusto M. Paixão</p>
-        <p class="text-p"><a href="./versions.html">Versão 1.5.5</a></p>
+        <p class="text-p"><a href="./versions.html">Versão 1.5.6</a></p>
       </div>
 
     </footer>
